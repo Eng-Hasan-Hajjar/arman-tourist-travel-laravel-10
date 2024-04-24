@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('armen', function (Blueprint $table) {
             $table->id();
+
+
+            $table->string('name');
+            $table->text('description');
+            $table->string('location');
+            $table->string('image');
+            $table->string('airport');
+
+
             $table->timestamps();
         });
     }

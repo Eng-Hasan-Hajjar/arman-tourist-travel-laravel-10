@@ -13,6 +13,16 @@ return new class extends Migration
     {
         Schema::create('arman_springs', function (Blueprint $table) {
             $table->id();
+
+            $table->string('name');
+            $table->text('description');
+            $table->string('location');
+            $table->string('image');
+            $table->date('date');
+
+            $table->unsignedBigInteger('arman_id');
+            $table->foreign('arman_id')->references('id')->on('armen');
+
             $table->timestamps();
         });
     }
