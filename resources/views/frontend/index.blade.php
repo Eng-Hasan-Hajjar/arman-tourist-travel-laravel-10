@@ -82,7 +82,7 @@
                         <h1 class="display-3 text-white mb-3 animated slideInDown">Enjoy Your Vacation With Us</h1>
                         <p class="fs-4 text-white mb-4 animated slideInDown">"Discover new places around the Armenia and enjoy a wonderful camping experience in complete safety and an environment full of adventures and natural beauty. An unforgettable experience awaits you!"</p>
                         <div class="position-relative w-75 mx-auto animated slideInDown">
-                            <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Eg: Thailand">
+                            <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Ex: museums ">
                             <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button>
                         </div>
                     </div>
