@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class ArmanCave extends Model
 {
     use HasFactory;
+    protected $fillable = ['image','description', 'location','image','date'
+
+    ];
 }
