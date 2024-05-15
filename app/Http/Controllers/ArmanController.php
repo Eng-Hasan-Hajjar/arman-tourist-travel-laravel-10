@@ -2,18 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Arman;
 use Illuminate\Http\Request;
 
 class ArmanController extends Controller
 {
-   /**
+     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $campGrounds = CampGround::latest()->paginate(5);
+        $armans = Arman::latest()->paginate(5);
 
-        return view('backend.campGrounds.index', compact('campGrounds'))
+        return view('backend.arman.index', compact('armans'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
@@ -22,7 +23,7 @@ class ArmanController extends Controller
      */
     public function create()
     {
-        return view('backend.campGrounds.create');
+        return view('backend.arman.create');
     }
 
     /**
@@ -34,33 +35,29 @@ class ArmanController extends Controller
         $request->validate([
             'name' => 'required|min:1|max:100',
             'description' => 'required',
-            'country' => 'required',
-            'city' => 'required',
-            'region' => 'required',
-            'cm_type' => 'required|integer',
-            'cm_season' => 'required|integer',
-            'campGround_image' => 'required|image|max:2048',
+            'location' => 'required',
+            'airport' => '',
+
+            'image' => 'required|image|max:2048',
         ]);
 
-        $image = $request->file('campGround_image');
+        $image = $request->file('image');
 
         $new_name = rand() . '.' . $image->getClientOriginalExtension();
         $image->move(public_path('images'), $new_name);
         $form_data = array(
             'name' => $request->name,
             'description' => $request->description,
-            'country' => $request->country,
-            'city' => $request->city,
-            'region' => $request->region,
-            'cm_type' => $request->cm_type,
-            'cm_season' => $request->cm_season,
+            'location' => $request->location,
+            'airport' => $request->airport,
 
-            'campGround_image'  =>  $new_name
+
+            'image'  =>  $new_name
         );
 
-        CampGround::create($form_data);
+        Arman::create($form_data);
 
-        return redirect('/adminpanel/campgrounds')->with('success', 'Data Added successfully.');
+        return redirect('/adminpanel/arman')->with('success', 'Data Added successfully.');
 
 
         $request->validate([
@@ -68,18 +65,18 @@ class ArmanController extends Controller
 
         ]);
 
-        CampGround::create($request->all());
+        Arman::create($request->all());
 
-        return redirect()->route('backend.campGrounds.index')
-            ->with('success', 'backend.campGrounds. created successfully.');
+        return redirect()->route('backend.arman.index')
+            ->with('success', 'backend.arman. created successfully.');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(CampGround $data)
+    public function show(Arman $data)
     {
-        return view('backend.campGrounds.show', compact('data'));
+        return view('backend.arman.show', compact('data'));
     }
 
     /**
@@ -87,35 +84,34 @@ class ArmanController extends Controller
      */
     public function edit($id)
     {
-        $data = CampGround::find($id);
-        return view('backend.campGrounds.edit', compact('data', 'id'));
+        $data = Arman::find($id);
+        return view('backend.arman.edit', compact('data', 'id'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, CampGround $campground)
+    public function update(Request $request, Arman $arman)
     {
         $request->validate([
             'name' => 'required',
 
         ]);
 
-        $campground->update($request->all());
+        $arman->update($request->all());
 
-        return redirect()->route('campground.index')
-            ->with('success', 'campground updated successfully');
+        return redirect()->route('arman.index')
+            ->with('success', 'arman updated successfully');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(CampGround $campground)
+    public function destroy(Arman $arman)
     {
-        $campground->delete();
+        $arman->delete();
 
-        return redirect()->route('campground.index')
-            ->with('success', 'campground deleted successfully');
+        return redirect()->route('arman.index')
+            ->with('success', 'arman deleted successfully');
     }
-    
 }

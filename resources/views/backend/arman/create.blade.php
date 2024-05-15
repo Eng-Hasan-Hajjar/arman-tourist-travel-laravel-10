@@ -20,7 +20,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card ">
-                    <div class="card-header ">إنشاء جديد</div>
+                    <div class="card-header "> create new </div>
                         @if ($errors->any())
                         <div class="alert alert-danger">
                         <ul>

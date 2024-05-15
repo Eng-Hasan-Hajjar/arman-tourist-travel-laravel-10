@@ -29,12 +29,11 @@
 
                                         <th>name</th>
                                         <th>description</th>
-                                        <th>country</th>
-                                        <th>city</th>
-                                        <th>region</th>
-                                        <th>cm_type</th>
-                                        <th>cm_season</th>
-                                        <th>campGround_image</th>
+                                        <th>location</th>
+                                        <th>airport</th>
+
+
+                                        <th>image</th>
 
 
                                         <th>control</th>
@@ -52,35 +51,10 @@
 
                                             <td>{{ $row->name }}</td>
                                             <td>{{ $row->description }}</td>
-                                            <td>{{ $row->country }}</td>
-                                            <td>{{ $row->city }}</td>
-                                            <td>{{ $row->region }}</td>
-                                            <!--    $array=['wood','desire','island','mountain'];           -->
+                                            <td>{{ $row->location }}</td>
+                                            <td>{{ $row->airport }}</td>
 
-
-                                            <td>
-                                                @if ($row->cm_type == 0)
-                                                    "جبل"
-                                                @elseif ($row->cm_type == 1)
-                                                    "بحر"
-                                                @else
-                                                    "غابة"
-                                                @endif
-                                            </td>
-                                            <!--   $array=['wood','desire','island','mountain'];        -->
-                                            <td>
-                                                @if ($row->cm_season == 0)
-                                                    "winter"
-                                                @elseif ($row->cm_season == 1)
-                                                    "spring"
-                                                @elseif ($row->cm_season == 2)
-                                                    "summer"
-                                                @else
-                                                    "fall"
-                                                @endif
-                                            </td>
-
-                                            <td><img src="{{ URL::to('/') }}/images/{{ $row->campGround_image }}"
+                                            <td><img src="{{ URL::to('/') }}/images/{{ $row->image }}"
                                                     class="img-thumbnail" width="75" />
                                             </td>
                                             <td>
@@ -108,7 +82,7 @@
 
 
                             </table>
-                            {!! $campGrounds->links() !!}
+                            {!! $armans->links() !!}
                         </div>
                         <!-- /.card-body -->
                     </div>
