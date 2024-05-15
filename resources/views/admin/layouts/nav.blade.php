@@ -92,28 +92,28 @@
 
 
 
-{{-- estates --}}
+{{-- Arman --}}
 
 
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
-               Control all estates
+                main Armenia regions
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{url('/adminpannel/es/create')}}" class="nav-link">
+                <a href="{{url('/adminpanel/arman/create')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Add estate</p>
+                  <p>Add Armenia region</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{url('/adminpannel/es')}}" class="nav-link">
+                <a href="{{url('/adminpanel/arman')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>All estates</p>
+                  <p>All Armenia regions</p>
                 </a>
               </li>
 
