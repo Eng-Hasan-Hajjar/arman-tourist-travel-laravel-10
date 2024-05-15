@@ -19,7 +19,7 @@ return new class extends Migration
             $table->text('description');
             $table->string('location');
             $table->string('image');
-            $table->string('airport');
+            $table->string('airport')->nullable(true);
 
 
             $table->timestamps();
