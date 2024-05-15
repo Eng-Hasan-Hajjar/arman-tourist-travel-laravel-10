@@ -12,11 +12,11 @@
 @endsection
 @section('content')
     <div class="container helementedit" >
-        <div class="card ">
+        <div class="card " style="margin-top:2%;">
             <div class="card-header"> edit </div>
 
-            <div class="card-body" >
-                <form style="margin-left:20%;width: 70%;" method="post" action="{{ route('arman.update', $id) }}" enctype="multipart/form-data">
+            <div class="card-body" style="margin-left:20%;width: 70%;" >
+                <form  method="post" action="{{ route('arman.update', $id) }}" enctype="multipart/form-data">
                     @csrf
                     @method('PATCH')
 

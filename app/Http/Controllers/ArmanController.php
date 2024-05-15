@@ -96,11 +96,33 @@ class ArmanController extends Controller
     public function update(Request $request, Arman $arman)
     {
         $request->validate([
-            'name' => 'required',
+            'name' => 'required|min:1|max:100',
+            'description' => 'required',
+            'location' => 'required',
+            'airport' => '',
 
+            'image' => 'required|image|max:2048',
         ]);
 
-        $arman->update($request->all());
+        $image = $request->file('image');
+
+        $new_name = rand() . '.' . $image->getClientOriginalExtension();
+        $image->move(public_path('images'), $new_name);
+        $form_data = array(
+            'name' => $request->name,
+            'description' => $request->description,
+            'location' => $request->location,
+            'airport' => $request->airport,
+
+
+            'image'  =>  $new_name
+        );
+
+       
+
+       // Arman::create($request->all());
+
+         $arman->update($request->all());
 
         return redirect()->route('arman.index')
             ->with('success', 'arman updated successfully');
