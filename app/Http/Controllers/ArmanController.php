@@ -74,8 +74,9 @@ class ArmanController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Arman $data)
+    public function show($id)
     {
+        $data = Arman::find($id);
         return view('backend.arman.show', compact('data'));
     }
 
@@ -84,6 +85,7 @@ class ArmanController extends Controller
      */
     public function edit($id)
     {
+
         $data = Arman::find($id);
         return view('backend.arman.edit', compact('data', 'id'));
     }

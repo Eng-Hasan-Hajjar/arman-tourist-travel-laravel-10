@@ -16,9 +16,9 @@
                 <div class="container hcontainer">
                     <div class="card hcard helement hcard-body">
 
-                        <div class="card-header"><p  class="float-right">جميع الأماكن</p></div>
+                        <div class="card-header"><p  class="float-left">all main region </p></div>
                         <div class="card-header">
-                            <a href="{{ route('arman.create') }}" class=" btn btn-success float-right">إنشاء جديد</a>
+                            <a href="{{ route('arman.create') }}" class=" btn btn-success float-right">create new </a>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">

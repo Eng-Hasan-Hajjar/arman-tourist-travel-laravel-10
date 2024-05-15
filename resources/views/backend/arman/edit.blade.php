@@ -1,7 +1,7 @@
 @extends('admin.layouts.layout')
 
 @section('title')
-       edit 
+       edit
 @endsection
 @section('header')
 {{ Html::style('hdesign/hstyle.css') }}
@@ -11,12 +11,12 @@
 
 @endsection
 @section('content')
-    <div class="container helementedit">
+    <div class="container helementedit" >
         <div class="card ">
             <div class="card-header"> edit </div>
 
-            <div class="card-body">
-                <form method="post" action="{{ route('arman.update', $id) }}" enctype="multipart/form-data">
+            <div class="card-body" >
+                <form style="margin-left:20%;width: 70%;" method="post" action="{{ route('arman.update', $id) }}" enctype="multipart/form-data">
                     @csrf
                     @method('PATCH')
 

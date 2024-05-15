@@ -3,7 +3,7 @@
 @extends('admin.layouts.layout')
 
 @section('title')
-التحكم
+ create
 @endsection
 
 @section('header')
@@ -16,10 +16,10 @@
 @endsection
 
 @section('content')
-    <div class="container helement">
-        <div class="row justify-content-center">
+    <div class="container helement" >
+        <div class="row justify-content-center" >
             <div class="col-md-8">
-                <div class="card ">
+                <div class="card " style="margin-top:2%;">
                     <div class="card-header "> create new </div>
                         @if ($errors->any())
                         <div class="alert alert-danger">
@@ -30,7 +30,7 @@
                     </ul>
                     </div>
                     @endif
-                    <div class="card-body ">
+                    <div class="card-body "style="margin-left:20%;width: 70%;">
                         {!! Form::open(['url' => '/adminpanel/arman', 'class' => 'form-horizontal', 'method' => 'post','files'=> true]) !!}
                            @include('backend.arman.formAdd')
                         {!! Form::close()  !!}
