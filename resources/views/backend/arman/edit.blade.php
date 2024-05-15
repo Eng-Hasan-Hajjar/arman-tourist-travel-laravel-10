@@ -16,11 +16,11 @@
             <div class="card-header">تعديل </div>
 
             <div class="card-body">
-                <form method="post" action="{{ route('campground.update', $id) }}" enctype="multipart/form-data">
+                <form method="post" action="{{ route('arman.update', $id) }}" enctype="multipart/form-data">
                     @csrf
                     @method('PATCH')
 
-                    @include('backend.campGrounds.formEdit')
+                    @include('backend.arman.formEdit')
 
                 </form>
             </div>

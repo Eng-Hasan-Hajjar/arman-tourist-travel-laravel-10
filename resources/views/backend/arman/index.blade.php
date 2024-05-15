@@ -18,7 +18,7 @@
 
                         <div class="card-header"><p  class="float-right">جميع الأماكن</p></div>
                         <div class="card-header">
-                            <a href="{{ route('campground.create') }}" class=" btn btn-success float-right">إنشاء جديد</a>
+                            <a href="{{ route('arman.create') }}" class=" btn btn-success float-right">إنشاء جديد</a>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -47,7 +47,7 @@
                                 <tbody>
 
 
-                                    @foreach ($campGrounds as $row)
+                                    @foreach ($armans as $row)
                                         <tr>
 
                                             <td>{{ $row->name }}</td>
@@ -84,16 +84,16 @@
                                                     class="img-thumbnail" width="75" />
                                             </td>
                                             <td>
-                                                <a href="{{ route('campground.show', $row->id) }}"
+                                                <a href="{{ route('arman.show', $row->id) }}"
                                                     class="btn btn-primary">Show</a>
-                                                <a href="{{ route('campground.edit', $row->id) }}"
+                                                <a href="{{ route('arman.edit', $row->id) }}"
                                                     class="btn btn-warning">Edit</a>
                                             </td>
 
                                             <td>
 
                                                 <form method="post" class="delete_form"
-                                                    action="{{ route('campground.destroy', $row->id) }}">
+                                                    action="{{ route('arman.destroy', $row->id) }}">
                                                     {{ csrf_field() }}
                                                     <input type="hidden" name="_method" value="DELETE" />
                                                     <button type="submit" class="btn btn-danger">Delete</button>

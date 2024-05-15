@@ -57,7 +57,7 @@ class ArmansController extends Controller
             'campGround_image'  =>  $new_name
         );
 
-        CampGround::create($form_data);
+        Arman::create($form_data);
 
         return redirect('/adminpanel/campgrounds')->with('success', 'Data Added successfully.');
 
@@ -67,7 +67,7 @@ class ArmansController extends Controller
 
         ]);
 
-        CampGround::create($request->all());
+        Arman::create($request->all());
 
         return redirect()->route('backend.campGrounds.index')
             ->with('success', 'backend.campGrounds. created successfully.');
@@ -76,7 +76,7 @@ class ArmansController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(CampGround $data)
+    public function show(Arman $data)
     {
         return view('backend.campGrounds.show', compact('data'));
     }
@@ -86,14 +86,14 @@ class ArmansController extends Controller
      */
     public function edit($id)
     {
-        $data = CampGround::find($id);
+        $data = Arman::find($id);
         return view('backend.campGrounds.edit', compact('data', 'id'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, CampGround $campground)
+    public function update(Request $request, Arman $campground)
     {
         $request->validate([
             'name' => 'required',
@@ -109,7 +109,7 @@ class ArmansController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(CampGround $campground)
+    public function destroy(Arman $campground)
     {
         $campground->delete();
 

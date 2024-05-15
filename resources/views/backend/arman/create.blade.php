@@ -32,7 +32,7 @@
                     @endif
                     <div class="card-body ">
                         {!! Form::open(['url' => '/adminpanel/campground', 'class' => 'form-horizontal', 'method' => 'post','files'=> true]) !!}
-                           @include('backend.campGrounds.formAdd')
+                           @include('backend.arman.formAdd')
                         {!! Form::close()  !!}
                     </div>
                 </div>

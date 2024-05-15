@@ -5,7 +5,7 @@
 @section('content')
     <div class="jumbotron text-center">
         <div align="right" style="width: 335px; margin-left: 335px ;margin-bottom: 20px">
-            <a href="{{ route('campground.index') }}" class="btn btn-default">  رجوع </a>
+            <a href="{{ route('arman.index') }}" class="btn btn-default">  رجوع </a>
         </div>
         <br />
 
@@ -33,7 +33,7 @@
             <h3>Type - {{ cm_type_func()[4] }}</h3>
         @endif
 
-       
+
         <img src="{{ URL::to('/') }}/images/{{ $data->campGround_image }}" class="img-thumbnail" />
 
 
