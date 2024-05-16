@@ -1,6 +1,10 @@
 
 <div class="form-group">
-    <label for="name"> name  </label>
+    <label for="arman_id"> arman_id : </label>
+    <input type="number" name="arman_id" class="form-control" id="arman_id" >
+</div>
+<div class="form-group">
+    <label for="name"> name : </label>
     <input type="text" name="name" class="form-control" id="name" >
 </div>
 <div class="form-group">
@@ -12,16 +16,16 @@
     <input type="text" name="location" class="form-control" id="location" >
 </div>
 <div class="form-group">
-    <label for="airport">airport :   </label>
-    <input type="text" name="airport" class="form-control" id="airport" >
+    <label for="date"> date :   </label>
+    <input type="date" name="date" class="form-control" id="date" >
 </div>
 <div class="form-group">
     <label for="image" class="col-md-4 col-form-label text-md-left"> image </label>
     <div class="col-md-6">
         <div style="">
-            @if (isset($arman))
+            @if (isset($castles))
                 @if ($arman->image != '')
-                    <img src="{{ Request::root() . '/images/' . $arman->image }}"
+                    <img src="{{ Request::root() . '/images/' . $castles->image }}"
                     style="width: 50%;high:50%"
                     />
                     <br>
@@ -39,8 +43,8 @@
 </div>
 <!-- Submit Button -->
 <div class="form-group">
-    <div class="col-lg-10 col-lg-offset-2" style="margin-left:80%;">
+    <div class="col-lg-10 col-lg-offset-2" style="margin-left:60%;">
         {!! Form::submit('save', ['class' => 'btn btn-primary  pull-right']) !!}
-        <a href="{{ url('/adminpanel/arman') }}" class="btn btn-secondary" >   main regions  </a>
+        <a href="{{ url('/adminpanel/castles') }}" class="btn btn-secondary" >   Armenia castles  </a>
     </div>
 </div>

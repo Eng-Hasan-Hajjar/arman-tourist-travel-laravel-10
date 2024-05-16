@@ -121,6 +121,35 @@
           </li>
 
 
+{{-- Arman Castles --}}
+
+
+<li class="nav-item has-treeview">
+    <a href="#" class="nav-link">
+      <i class="nav-icon fas fa-users"></i>
+      <p>
+         Armenia castles
+        <i class="fas fa-angle-left right"></i>
+      </p>
+    </a>
+    <ul class="nav nav-treeview">
+      <li class="nav-item">
+        <a href="{{url('/adminpanel/castles/create')}}" class="nav-link">
+          <i class="far fa-circle nav-icon"></i>
+          <p>Add Armenia castles</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="{{url('/adminpanel/castles')}}" class="nav-link">
+          <i class="far fa-circle nav-icon"></i>
+          <p>All Armenia castles</p>
+        </a>
+      </li>
+
+    </ul>
+  </li>
+
+
 
 
 

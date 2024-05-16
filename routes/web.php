@@ -4,7 +4,7 @@ use App\Http\Controllers\ArmanController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CampGroundController;
-
+use App\Http\Controllers\ArmanCastlesController;
 
 
 
@@ -69,5 +69,5 @@ Route::middleware(['auth'])->group(function () {
 
 
     Route::resource('/adminpanel/arman', ArmanController::class);
-
+    Route::resource('/adminpanel/castles', ArmanCastlesController::class);
 });

@@ -16,9 +16,9 @@
                 <div class="container hcontainer"  >
                     <div class="card hcard helement hcard-body" >
 
-                        <div class="card-header"><p  class="float-left">all main region </p></div>
+                        <div class="card-header"><p  class="float-left">all castles </p></div>
                         <div class="card-header">
-                            <a href="{{ route('arman.create') }}" class=" btn btn-success float-right">create new </a>
+                            <a href="{{ route('castles.create') }}" class=" btn btn-success float-right">create new </a>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -30,7 +30,7 @@
                                         <th>name</th>
                                         <th>description</th>
                                         <th>location</th>
-                                        <th>airport</th>
+                                        <th>date</th>
 
 
                                         <th>image</th>
@@ -46,28 +46,28 @@
                                 <tbody>
 
 
-                                    @foreach ($armans as $row)
+                                    @foreach ($castles as $row)
                                         <tr>
 
                                             <td>{{ $row->name }}</td>
                                             <td>{{ $row->description }}</td>
                                             <td>{{ $row->location }}</td>
-                                            <td>{{ $row->airport }}</td>
+                                            <td>{{ $row->date }}</td>
 
                                             <td><img src="{{ URL::to('/') }}/images/{{ $row->image }}"
                                                     class="img-thumbnail" width="75" />
                                             </td>
                                             <td>
-                                                <a href="{{ route('arman.show', $row->id) }}"
+                                                <a href="{{ route('castles.show', $row->id) }}"
                                                     class="btn btn-primary">Show</a>
-                                                <a href="{{ route('arman.edit', $row->id) }}"
+                                                <a href="{{ route('castles.edit', $row->id) }}"
                                                     class="btn btn-warning">Edit</a>
                                             </td>
 
                                             <td>
 
                                                 <form method="post" class="delete_form"
-                                                    action="{{ route('arman.destroy', $row->id) }}">
+                                                    action="{{ route('castles.destroy', $row->id) }}">
                                                     {{ csrf_field() }}
                                                     <input type="hidden" name="_method" value="DELETE" />
                                                     <button type="submit" class="btn btn-danger">Delete</button>
@@ -82,7 +82,7 @@
 
 
                             </table>
-                            {!! $armans->links() !!}
+                            {!! $castles->links() !!}
                         </div>
                         <!-- /.card-body -->
                     </div>
