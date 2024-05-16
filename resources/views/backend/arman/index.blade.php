@@ -13,8 +13,8 @@
 @section('content')
 
 
-                <div class="container hcontainer">
-                    <div class="card hcard helement hcard-body">
+                <div class="container hcontainer"  >
+                    <div class="card hcard helement hcard-body" >
 
                         <div class="card-header"><p  class="float-left">all main region </p></div>
                         <div class="card-header">

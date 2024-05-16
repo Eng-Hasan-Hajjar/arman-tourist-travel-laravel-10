@@ -90,9 +90,18 @@ class ArmanController extends Controller
         return view('backend.arman.edit', compact('data', 'id'));
     }
 
-    /**
+    /*
      * Update the specified resource in storage.
-     */
+
+    public function update(Request $request, Arman $arman)
+    {
+
+       $arman->update($request->all());
+
+        return redirect()->route('arman.index')
+            ->with('success', 'arman updated successfully');
+    }
+    */
     public function update(Request $request, Arman $arman)
     {
         $request->validate([
@@ -100,34 +109,36 @@ class ArmanController extends Controller
             'description' => 'required',
             'location' => 'required',
             'airport' => '',
-
-            'image' => 'required|image|max:2048',
+            'image' => 'nullable|image|max:2048',
         ]);
 
-        $image = $request->file('image');
-
-        $new_name = rand() . '.' . $image->getClientOriginalExtension();
-        $image->move(public_path('images'), $new_name);
-        $form_data = array(
+        $form_data = [
             'name' => $request->name,
             'description' => $request->description,
             'location' => $request->location,
             'airport' => $request->airport,
+        ];
 
+        if ($request->hasFile('image')) {
+            // Delete the old image if exists
+            if ($arman->image && file_exists(public_path('images/' . $arman->image))) {
+                unlink(public_path('images/' . $arman->image));
+            }
 
-            'image'  =>  $new_name
-        );
+            // Upload the new image
+            $image = $request->file('image');
+            $new_name = rand() . '.' . $image->getClientOriginalExtension();
+            $image->move(public_path('images'), $new_name);
 
-       
+            // Add the new image name to the form data
+            $form_data['image'] = $new_name;
+        }
 
-       // Arman::create($request->all());
-
-         $arman->update($request->all());
+        $arman->update($form_data);
 
         return redirect()->route('arman.index')
-            ->with('success', 'arman updated successfully');
+            ->with('success', 'Arman updated successfully');
     }
-
     /**
      * Remove the specified resource from storage.
      */
