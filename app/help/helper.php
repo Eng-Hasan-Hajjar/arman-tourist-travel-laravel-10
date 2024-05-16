@@ -1,5 +1,11 @@
 <?php
 
+use App\Models\Arman;
+function names_armans(){
+    $armans = Arman::all('name');
+    $array=[$armans];
+	return $array;
+}
 
 function cm_season_func(){
 	$array=['winter','spring','summer','fall',];

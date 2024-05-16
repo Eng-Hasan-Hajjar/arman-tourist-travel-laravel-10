@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('image');
             $table->date('date');
 
-            $table->unsignedBigInteger('arman_id')->default(1)->index()->nullable();
+            $table->unsignedBigInteger('arman_id')->index()->nullable();
             $table->foreign('arman_id')->references('id')->on('armen')->onDelete('cascade');
 
             $table->timestamps();

@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Arman;
 use Illuminate\Http\Request;
 use App\Models\ArmanCastle;
-use App\Models\Arman;
 class ArmanCastlesController extends Controller
 {
      /**
@@ -13,7 +13,6 @@ class ArmanCastlesController extends Controller
     public function index()
     {
         $castles = ArmanCastle::latest()->paginate(5);
-
         return view('backend.castles.index', compact('castles'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
@@ -23,7 +22,8 @@ class ArmanCastlesController extends Controller
      */
     public function create()
     {
-        return view('backend.castles.create');
+        $armans = Arman::all();
+        return view('backend.castles.create', compact('armans'));
     }
 
     /**
@@ -31,7 +31,7 @@ class ArmanCastlesController extends Controller
      */
     public function store(Request $request)
     {
-        //$user=User::user();
+//dd($request);
         $request->validate([
             'arman_id' => 'required',
             'name' => 'required|min:1|max:100',
@@ -91,18 +91,7 @@ class ArmanCastlesController extends Controller
         return view('backend.castles.edit', compact('data', 'id'));
     }
 
-    /*
-     * Update the specified resource in storage.
 
-    public function update(Request $request, Arman $arman)
-    {
-
-       $arman->update($request->all());
-
-        return redirect()->route('arman.index')
-            ->with('success', 'arman updated successfully');
-    }
-    */
     public function update(Request $request, ArmanCastle $castles)
     {
         $request->validate([

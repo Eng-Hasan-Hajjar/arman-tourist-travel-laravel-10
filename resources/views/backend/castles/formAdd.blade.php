@@ -1,8 +1,10 @@
 
 <div class="form-group">
-    <label for="arman_id"> arman_id : </label>
-    <input type="number" name="arman_id" class="form-control" id="arman_id" >
+    {!! Form::label('arman_id', 'Arman:',['class'=>'col-md-4 col-form-label text-md-right']) !!}
+    {!! Form::select('arman_id', $armans->pluck('name', 'id')->toArray(), null, ['class'=>'form-control select2', 'placeholder'=>'Select Arman']) !!}
 </div>
+
+
 <div class="form-group">
     <label for="name"> name : </label>
     <input type="text" name="name" class="form-control" id="name" >

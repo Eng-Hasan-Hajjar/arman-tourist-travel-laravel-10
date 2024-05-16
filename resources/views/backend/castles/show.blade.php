@@ -17,3 +17,11 @@
     </div>
 
 @endsection
+<div class="form-group">
+    <label for="cars">Choose a region:</label>
+    <select name="arman_id" id="arman_id" value="1" class="form-control">
+        @foreach($armans as $arman)
+            <option value="{{ $arman->arman_id }}">{{ $arman->name }}</option>
+        @endforeach
+    </select>
+</div>
