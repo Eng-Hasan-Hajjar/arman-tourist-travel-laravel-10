@@ -9,7 +9,7 @@ use App\Http\Controllers\ArmanCavesController;
 use App\Http\Controllers\ArmanChurchesController;
 use App\Http\Controllers\ArmanForestsController;
 use App\Http\Controllers\ArmanGardensController;
-
+use App\Http\Controllers\ArmanLakesController;
 
 
 
@@ -79,5 +79,6 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('/adminpanel/forests', ArmanForestsController::class);
     Route::resource('/adminpanel/gardens', ArmanGardensController::class);
 
+    Route::resource('/adminpanel/lakes', ArmanLakesController::class);
 
 });

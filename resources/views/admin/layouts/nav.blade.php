@@ -263,6 +263,34 @@
   </li>
 
 
+{{-- Arman lakes --}}
+
+
+<li class="nav-item has-treeview">
+    <a href="#" class="nav-link">
+      <i class="nav-icon fas fa-users"></i>
+      <p>
+         Armenia lakes
+        <i class="fas fa-angle-left right"></i>
+      </p>
+    </a>
+    <ul class="nav nav-treeview">
+      <li class="nav-item">
+        <a href="{{url('/adminpanel/lakes/create')}}" class="nav-link">
+          <i class="far fa-circle nav-icon"></i>
+          <p>Add Armenia lakes</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="{{url('/adminpanel/lakes')}}" class="nav-link">
+          <i class="far fa-circle nav-icon"></i>
+          <p>All Armenia lakes</p>
+        </a>
+      </li>
+
+    </ul>
+  </li>
+
 
 
 
