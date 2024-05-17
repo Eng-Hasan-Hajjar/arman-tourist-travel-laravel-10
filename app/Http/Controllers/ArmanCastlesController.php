@@ -26,51 +26,38 @@ class ArmanCastlesController extends Controller
         return view('backend.castles.create', compact('armans'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
-//dd($request);
+        // للتحقق من البيانات المرسلة من النموذج
+        // dd($request->all());
+
         $request->validate([
             'arman_id' => 'required',
             'name' => 'required|min:1|max:100',
             'description' => 'required',
             'location' => 'required',
             'date' => '',
-
             'image' => 'required|image|max:2048',
         ]);
 
         $image = $request->file('image');
-
         $new_name = rand() . '.' . $image->getClientOriginalExtension();
         $image->move(public_path('images'), $new_name);
+
         $form_data = array(
-            'arman_id'=> $request->arman_id,
+            'arman_id' => $request->arman_id,
             'name' => $request->name,
             'description' => $request->description,
             'location' => $request->location,
             'date' => $request->date,
-
-            'image'  =>  $new_name
+            'image' => $new_name,
         );
 
         ArmanCastle::create($form_data);
 
         return redirect('/adminpanel/castles')->with('success', 'Data Added successfully.');
-
-
-        $request->validate([
-            'name' => 'required',
-
-        ]);
-
-        ArmanCastle::create($request->all());
-
-        return redirect()->route('backend.castles.index')
-            ->with('success', 'backend.castles. created successfully.');
     }
+
 
     /**
      * Display the specified resource.
@@ -78,7 +65,8 @@ class ArmanCastlesController extends Controller
     public function show($id)
     {
         $data = ArmanCastle::find($id);
-        return view('backend.castles.show', compact('data'));
+        $arman = Arman::find($data->arman_id); // إحضار الـ Arman المرتبط
+        return view('backend.castles.show', compact('data','arman'));
     }
 
     /**
@@ -88,31 +76,34 @@ class ArmanCastlesController extends Controller
     {
 
         $data = ArmanCastle::find($id);
-        return view('backend.castles.edit', compact('data', 'id'));
+        $armans = Arman::all();
+        return view('backend.castles.edit', compact('data', 'id','armans'));
     }
 
 
-    public function update(Request $request, ArmanCastle $castles)
+    public function update(Request $request, ArmanCastle $castle)
     {
         $request->validate([
+            'arman_id' => 'required',
             'name' => 'required|min:1|max:100',
             'description' => 'required',
             'location' => 'required',
-            'date' => '',
+            'date' => 'required',
             'image' => 'nullable|image|max:2048',
         ]);
 
         $form_data = [
+            'arman_id' => $request->arman_id,
             'name' => $request->name,
             'description' => $request->description,
             'location' => $request->location,
-            'date' => $request->airport,
+            'date' => $request->date,
         ];
 
         if ($request->hasFile('image')) {
             // Delete the old image if exists
-            if ($castles->image && file_exists(public_path('images/' . $castles->image))) {
-                unlink(public_path('images/' . $castles->image));
+            if ($castle->image && file_exists(public_path('images/' . $castle->image))) {
+                unlink(public_path('images/' . $castle->image));
             }
 
             // Upload the new image
@@ -124,7 +115,7 @@ class ArmanCastlesController extends Controller
             $form_data['image'] = $new_name;
         }
 
-        $castles->update($form_data);
+        $castle->update($form_data);
 
         return redirect()->route('castles.index')
             ->with('success', 'castles updated successfully');
@@ -132,9 +123,9 @@ class ArmanCastlesController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(ArmanCastle $castles)
+    public function destroy(ArmanCastle $castle)
     {
-        $castles->delete();
+        $castle->delete();
 
         return redirect()->route('castles.index')
             ->with('success', 'castles deleted successfully');

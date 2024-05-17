@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class ArmanCastle extends Model
 {
     use HasFactory;
-    protected $fillable = ['name','description', 'location','image','date'
+    protected $fillable = [  'arman_id','name','description', 'location','image','date'
 
     ];
 }

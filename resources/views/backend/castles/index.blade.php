@@ -70,7 +70,7 @@
                                                     action="{{ route('castles.destroy', $row->id) }}">
                                                     {{ csrf_field() }}
                                                     <input type="hidden" name="_method" value="DELETE" />
-                                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                                    <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this record?');" >Delete</button>
                                                 </form>
                                             </td>
 
