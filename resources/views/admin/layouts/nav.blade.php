@@ -177,6 +177,61 @@
     </ul>
   </li>
 
+{{-- Arman churches --}}
+
+
+<li class="nav-item has-treeview">
+    <a href="#" class="nav-link">
+      <i class="nav-icon fas fa-users"></i>
+      <p>
+         Armenia churches
+        <i class="fas fa-angle-left right"></i>
+      </p>
+    </a>
+    <ul class="nav nav-treeview">
+      <li class="nav-item">
+        <a href="{{url('/adminpanel/churches/create')}}" class="nav-link">
+          <i class="far fa-circle nav-icon"></i>
+          <p>Add Armenia churches</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="{{url('/adminpanel/churches')}}" class="nav-link">
+          <i class="far fa-circle nav-icon"></i>
+          <p>All Armenia churches</p>
+        </a>
+      </li>
+
+    </ul>
+  </li>
+
+{{-- Arman forests --}}
+
+
+<li class="nav-item has-treeview">
+    <a href="#" class="nav-link">
+      <i class="nav-icon fas fa-users"></i>
+      <p>
+         Armenia forests
+        <i class="fas fa-angle-left right"></i>
+      </p>
+    </a>
+    <ul class="nav nav-treeview">
+      <li class="nav-item">
+        <a href="{{url('/adminpanel/forests/create')}}" class="nav-link">
+          <i class="far fa-circle nav-icon"></i>
+          <p>Add Armenia forests</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="{{url('/adminpanel/forests')}}" class="nav-link">
+          <i class="far fa-circle nav-icon"></i>
+          <p>All Armenia forests</p>
+        </a>
+      </li>
+
+    </ul>
+  </li>
 
 
 

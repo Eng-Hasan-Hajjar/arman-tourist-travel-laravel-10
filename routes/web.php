@@ -7,7 +7,7 @@ use App\Http\Controllers\CampGroundController;
 use App\Http\Controllers\ArmanCastlesController;
 use App\Http\Controllers\ArmanCavesController;
 use App\Http\Controllers\ArmanChurchesController;
-
+use App\Http\Controllers\ArmanForestsController;
 
 
 Route::get('/', function () {
@@ -73,6 +73,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('/adminpanel/castles', ArmanCastlesController::class);
     Route::resource('/adminpanel/caves', ArmanCavesController::class);
     Route::resource('/adminpanel/churches', ArmanChurchesController::class);
+    Route::resource('/adminpanel/forests', ArmanForestsController::class);
 
 
 });

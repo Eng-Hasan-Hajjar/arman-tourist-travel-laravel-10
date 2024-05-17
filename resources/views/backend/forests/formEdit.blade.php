@@ -49,6 +49,6 @@
 <div class="form-group"style="padding:50px">
     <div class="col-lg-10 col-lg-offset-2"style="margin-left:80%;">
         {!! Form::submit('save', ['class' => 'btn btn-primary  pull-right']) !!}
-        <a href="{{ url('/adminpanel/caves') }}" class="btn btn-secondary" > Armenia caves  </a>
+        <a href="{{ url('/adminpanel/forests') }}" class="btn btn-secondary" > Armenia forests  </a>
     </div>
 </div>
