@@ -26,7 +26,7 @@
                                 <thead>
 
                                     <tr>
-
+                                        <th>Arman</th>
                                         <th>name</th>
                                         <th>description</th>
                                         <th>location</th>
@@ -48,7 +48,11 @@
 
                                     @foreach ($castles as $row)
                                         <tr>
-
+                                            @foreach ($armans as $arman )
+                                                @if( $row->arman_id ==  $arman->id)
+                                                     <td>{{  $arman->name }}</td>
+                                                @endif
+                                              @endforeach
                                             <td>{{ $row->name }}</td>
                                             <td>{{ $row->description }}</td>
                                             <td>{{ $row->location }}</td>

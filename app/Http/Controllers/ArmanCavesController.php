@@ -11,13 +11,15 @@ class ArmanCavesController extends Controller
       /**
      * Display a listing of the resource.
      */
+
     public function index()
     {
+        $armans = Arman::all(); 
+
         $caves = ArmanCave::latest()->paginate(5);
-        return view('backend.caves.index', compact('caves'))
+        return view('backend.caves.index', compact('caves','armans'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
-
     /**
      * Show the form for creating a new resource.
      */

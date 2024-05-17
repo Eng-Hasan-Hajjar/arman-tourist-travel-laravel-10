@@ -12,8 +12,10 @@ class ArmanCastlesController extends Controller
      */
     public function index()
     {
+        $armans = Arman::all();
+
         $castles = ArmanCastle::latest()->paginate(5);
-        return view('backend.castles.index', compact('castles'))
+        return view('backend.castles.index', compact('castles','armans'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
