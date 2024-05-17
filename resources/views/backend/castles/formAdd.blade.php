@@ -1,6 +1,6 @@
 
 <div class="form-group">
-    {!! Form::label('arman_id', 'Arman:',['class'=>'col-md-4 col-form-label text-md-right']) !!}
+    {!! Form::label('arman_id', 'Arman:',['class'=>'col-md-4 col-form-label text-md-left']) !!}
     {!! Form::select('arman_id', $armans->pluck('name', 'id')->toArray(), null, ['class'=>'form-control select2', 'placeholder'=>'Select Arman']) !!}
 </div>
 
