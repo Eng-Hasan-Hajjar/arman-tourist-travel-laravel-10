@@ -16,11 +16,11 @@
             <div class="card-header"> edit </div>
 
             <div class="card-body" style="margin-left:20%;width: 70%;" >
-                <form  method="post" action="{{ route('caves.update', $id) }}" enctype="multipart/form-data">
+                <form  method="post" action="{{ route('malls.update', $id) }}" enctype="multipart/form-data">
                     @csrf
                     @method('PATCH')
 
-                    @include('backend.caves.formEdit')
+                    @include('backend.malls.formEdit')
 
                 </form>
             </div>
