@@ -25,9 +25,9 @@
     <label for="image" class="col-md-4 col-form-label text-md-left"> image </label>
     <div class="col-md-6">
         <div style="">
-            @if (isset($castles))
-                @if ($arman->image != '')
-                    <img src="{{ Request::root() . '/images/' . $castles->image }}"
+            @if (isset($caves))
+                @if ($caves->image != '')
+                    <img src="{{ Request::root() . '/images/' . $caves->image }}"
                     style="width: 50%;high:50%"
                     />
                     <br>
@@ -47,6 +47,6 @@
 <div class="form-group">
     <div class="col-lg-10 col-lg-offset-2" style="margin-left:60%;">
         {!! Form::submit('save', ['class' => 'btn btn-primary  pull-right']) !!}
-        <a href="{{ url('/adminpanel/castles') }}" class="btn btn-secondary" >   Armenia castles  </a>
+        <a href="{{ url('/adminpanel/caves') }}" class="btn btn-secondary" >   Armenia caves  </a>
     </div>
 </div>
