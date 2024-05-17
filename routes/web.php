@@ -8,6 +8,9 @@ use App\Http\Controllers\ArmanCastlesController;
 use App\Http\Controllers\ArmanCavesController;
 use App\Http\Controllers\ArmanChurchesController;
 use App\Http\Controllers\ArmanForestsController;
+use App\Http\Controllers\ArmanGardensController;
+
+
 
 
 Route::get('/', function () {
@@ -74,6 +77,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('/adminpanel/caves', ArmanCavesController::class);
     Route::resource('/adminpanel/churches', ArmanChurchesController::class);
     Route::resource('/adminpanel/forests', ArmanForestsController::class);
+    Route::resource('/adminpanel/gardens', ArmanGardensController::class);
 
 
 });
