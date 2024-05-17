@@ -31,8 +31,8 @@
                     </div>
                     @endif
                     <div class="card-body "style="margin-left:20%;width: 70%;">
-                        {!! Form::open(['url' => '/adminpanel/arman', 'class' => 'form-horizontal', 'method' => 'post','files'=> true]) !!}
-                           @include('backend.arman.formAdd')
+                        {!! Form::open(['url' => '/adminpanel/castles', 'class' => 'form-horizontal', 'method' => 'post','files'=> true]) !!}
+                           @include('backend.castles.formAdd')
                         {!! Form::close()  !!}
                     </div>
                 </div>

@@ -1,6 +1,11 @@
 
 <div class="form-group">
-    <label for="name"> name  </label>
+    {!! Form::label('arman_id', 'Arman:',['class'=>'col-md-4 col-form-label text-md-left']) !!}
+    {!! Form::select('arman_id', $armans->pluck('name', 'id')->toArray(), $data->arman_id, ['class'=>'form-control select2', 'placeholder'=>'Select Arman']) !!}
+</div>
+
+<div class="form-group">
+    <label for="name"> name:  </label>
     <input type="text" name="name" class="form-control" id="name" value="{{$data->name}}" >
 </div>
 <div class="form-group">
@@ -12,8 +17,8 @@
     <input type="text" name="location" class="form-control" id="location" value="{{$data->location}}">
 </div>
 <div class="form-group">
-    <label for="airport">airport :   </label>
-    <input type="text" name="airport" class="form-control" id="airport" value="{{$data->airport}}">
+    <label for="date"> date :   </label>
+    <input type="text" name="date" class="form-control" id="date" value="{{$data->date}}">
 </div>
 
 <div class="form-group">
@@ -44,6 +49,6 @@
 <div class="form-group"style="padding:50px">
     <div class="col-lg-10 col-lg-offset-2"style="margin-left:80%;">
         {!! Form::submit('save', ['class' => 'btn btn-primary  pull-right']) !!}
-        <a href="{{ url('/adminpanel/arman') }}" class="btn btn-secondary" >   main regions  </a>
+        <a href="{{ url('/adminpanel/castles') }}" class="btn btn-secondary" > Armenia castles  </a>
     </div>
 </div>
