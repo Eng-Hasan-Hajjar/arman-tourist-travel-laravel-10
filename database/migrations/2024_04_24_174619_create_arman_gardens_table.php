@@ -18,10 +18,9 @@ return new class extends Migration
             $table->string('location');
             $table->string('image');
             $table->date('date');
+            $table->unsignedBigInteger('arman_id')->index()->nullable();
+            $table->foreign('arman_id')->references('id')->on('armen')->onDelete('cascade');
 
-            $table->unsignedBigInteger('arman_id');
-            $table->foreign('arman_id')->references('id')->on('armen');
-            
             $table->timestamps();
         });
     }
