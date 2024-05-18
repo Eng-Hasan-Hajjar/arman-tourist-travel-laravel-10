@@ -127,7 +127,7 @@ class ArmanMountainsController extends Controller
      {
          $mountain->delete();
 
-         return redirect()->route('mountain.index')
+         return redirect()->route('mountains.index')
              ->with('success', 'mountain deleted successfully');
      }
 }

@@ -127,7 +127,7 @@ class ArmanMuseumsController extends Controller
      {
          $museum->delete();
 
-         return redirect()->route('museum.index')
+         return redirect()->route('museums.index')
              ->with('success', 'museum deleted successfully');
      }
 }

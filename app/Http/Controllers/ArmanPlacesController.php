@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Arman;
-use App\Models\ArmanMountain;
+
+use App\Models\ArmanPlace;
 
 class ArmanPlacesController extends Controller
 {
@@ -16,8 +17,8 @@ class ArmanPlacesController extends Controller
      {
          $armans = Arman::all();
 
-         $mountains = ArmanMountain::latest()->paginate(5);
-         return view('backend.mountains.index', compact('mountains','armans'))
+         $places = ArmanPlace::latest()->paginate(5);
+         return view('backend.places.index', compact('places','armans'))
              ->with('i', (request()->input('page', 1) - 1) * 5);
      }
      /**
@@ -26,7 +27,7 @@ class ArmanPlacesController extends Controller
      public function create()
      {
          $armans = Arman::all();
-         return view('backend.mountains.create', compact('armans'));
+         return view('backend.places.create', compact('armans'));
      }
 
      public function store(Request $request)
@@ -55,8 +56,8 @@ class ArmanPlacesController extends Controller
              'date' => $request->date,
              'image' => $new_name,
          );
-         ArmanMountain::create($form_data);
-         return redirect('/adminpanel/mountains')->with('success', 'Data Added successfully.');
+         ArmanPlace::create($form_data);
+         return redirect('/adminpanel/places')->with('success', 'Data Added successfully.');
      }
 
 
@@ -65,9 +66,9 @@ class ArmanPlacesController extends Controller
       */
      public function show($id)
      {
-         $data = ArmanMountain::find($id);
+         $data = ArmanPlace::find($id);
          $arman = Arman::find($data->arman_id); // إحضار الـ Arman المرتبط
-         return view('backend.mountains.show', compact('data','arman'));
+         return view('backend.places.show', compact('data','arman'));
      }
 
      /**
@@ -75,13 +76,13 @@ class ArmanPlacesController extends Controller
       */
      public function edit($id)
      {
-         $data = ArmanMountain::find($id);
+         $data = ArmanPlace::find($id);
          $armans = Arman::all();
-         return view('backend.mountains.edit', compact('data', 'id','armans'));
+         return view('backend.places.edit', compact('data', 'id','armans'));
      }
 
 
-     public function update(Request $request, ArmanMountain $mountain)
+     public function update(Request $request, ArmanPlace $place)
      {
          $request->validate([
              'arman_id' => 'required',
@@ -102,8 +103,8 @@ class ArmanPlacesController extends Controller
 
          if ($request->hasFile('image')) {
              // Delete the old image if exists
-             if ($mountain->image && file_exists(public_path('images/' . $mountain->image))) {
-                 unlink(public_path('images/' . $mountain->image));
+             if ($place->image && file_exists(public_path('images/' . $place->image))) {
+                 unlink(public_path('images/' . $place->image));
              }
 
              // Upload the new image
@@ -115,19 +116,19 @@ class ArmanPlacesController extends Controller
              $form_data['image'] = $new_name;
          }
 
-         $mountain->update($form_data);
+         $place->update($form_data);
 
-         return redirect()->route('mountains.index')
-             ->with('success', 'mountains updated successfully');
+         return redirect()->route('places.index')
+             ->with('success', 'places updated successfully');
      }
      /**
       * Remove the specified resource from storage.
       */
-     public function destroy(ArmanMountain $mountain)
+     public function destroy(ArmanPlace $place)
      {
-         $mountain->delete();
+         $place->delete();
 
-         return redirect()->route('mountain.index')
-             ->with('success', 'mountain deleted successfully');
+         return redirect()->route('places.index')
+             ->with('success', 'places deleted successfully');
      }
 }
