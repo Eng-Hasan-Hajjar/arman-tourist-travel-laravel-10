@@ -1,7 +1,7 @@
 @extends('admin.layouts.layout')
 
 @section('title')
-   Cave Information
+museum Information
 @endsection
 
 @section('content')
@@ -10,11 +10,11 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header text-center">
-                    <h3>Cave Information</h3>
+                    <h3>museum Information</h3>
                 </div>
                 <div class="card-body">
                     <div class="text-center mb-4">
-                        <a href="{{ route('caves.index') }}" class="btn btn-primary">Back</a>
+                        <a href="{{ route('museums.index') }}" class="btn btn-primary">Back</a>
                     </div>
                     <table class="table table-striped">
                         <tr>
