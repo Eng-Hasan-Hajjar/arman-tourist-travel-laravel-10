@@ -14,6 +14,8 @@ use App\Http\Controllers\ArmanMallsController;
 use App\Http\Controllers\ArmanMountainsController;
 use App\Http\Controllers\ArmanMuseumsController;
 use App\Http\Controllers\ArmanPlacesController;
+use App\Http\Controllers\ArmanSlopesController;
+
 
 
 
@@ -91,6 +93,8 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('/adminpanel/mountains', ArmanMountainsController::class);
     Route::resource('/adminpanel/museums', ArmanMuseumsController::class);
     Route::resource('/adminpanel/places', ArmanPlacesController::class);
+    Route::resource('/adminpanel/slopes', ArmanSlopesController::class);
+
 
 
 });

@@ -46,7 +46,7 @@
                                 <tbody>
 
 
-                                    @foreach ($caves as $row)
+                                    @foreach ($places as $row)
                                         <tr>
                                             @foreach ($armans as $arman )
                                                @if( $row->arman_id ==  $arman->id)

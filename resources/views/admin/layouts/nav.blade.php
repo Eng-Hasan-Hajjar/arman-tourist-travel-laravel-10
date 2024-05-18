@@ -374,6 +374,61 @@
     </ul>
   </li>
 
+{{-- Arman places --}}
+
+
+<li class="nav-item has-treeview">
+    <a href="#" class="nav-link">
+      <i class="nav-icon fas fa-users"></i>
+      <p>
+         Armenia places
+        <i class="fas fa-angle-left right"></i>
+      </p>
+    </a>
+    <ul class="nav nav-treeview">
+      <li class="nav-item">
+        <a href="{{url('/adminpanel/places/create')}}" class="nav-link">
+          <i class="far fa-circle nav-icon"></i>
+          <p>Add Armenia places</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="{{url('/adminpanel/places ')}}" class="nav-link">
+          <i class="far fa-circle nav-icon"></i>
+          <p>All Armenia places</p>
+        </a>
+      </li>
+
+    </ul>
+  </li>
+
+{{-- Arman slopes --}}
+
+
+<li class="nav-item has-treeview">
+    <a href="#" class="nav-link">
+      <i class="nav-icon fas fa-users"></i>
+      <p>
+         Armenia slopes
+        <i class="fas fa-angle-left right"></i>
+      </p>
+    </a>
+    <ul class="nav nav-treeview">
+      <li class="nav-item">
+        <a href="{{url('/adminpanel/slopes/create')}}" class="nav-link">
+          <i class="far fa-circle nav-icon"></i>
+          <p>Add Armenia slopes</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="{{url('/adminpanel/slopes ')}}" class="nav-link">
+          <i class="far fa-circle nav-icon"></i>
+          <p>All Armenia slopes</p>
+        </a>
+      </li>
+
+    </ul>
+  </li>
 
 
 
