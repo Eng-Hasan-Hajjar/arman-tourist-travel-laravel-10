@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Arman;
-use App\Models\ArmanMountain;
+use App\Models\ArmanThreater;
 
 class ArmanTheatersController extends Controller
 {
@@ -16,8 +16,8 @@ class ArmanTheatersController extends Controller
      {
          $armans = Arman::all();
 
-         $mountains = ArmanMountain::latest()->paginate(5);
-         return view('backend.mountains.index', compact('mountains','armans'))
+         $theaters = ArmanThreater::latest()->paginate(5);
+         return view('backend.theaters.index', compact('theaters','armans'))
              ->with('i', (request()->input('page', 1) - 1) * 5);
      }
      /**
@@ -26,7 +26,7 @@ class ArmanTheatersController extends Controller
      public function create()
      {
          $armans = Arman::all();
-         return view('backend.mountains.create', compact('armans'));
+         return view('backend.theaters.create', compact('armans'));
      }
 
      public function store(Request $request)
@@ -55,8 +55,8 @@ class ArmanTheatersController extends Controller
              'date' => $request->date,
              'image' => $new_name,
          );
-         ArmanMountain::create($form_data);
-         return redirect('/adminpanel/mountains')->with('success', 'Data Added successfully.');
+         ArmanThreater::create($form_data);
+         return redirect('/adminpanel/theaters')->with('success', 'Data Added successfully.');
      }
 
 
@@ -65,9 +65,9 @@ class ArmanTheatersController extends Controller
       */
      public function show($id)
      {
-         $data = ArmanMountain::find($id);
-         $arman = Arman::find($data->arman_id); // إحضار الـ Arman المرتبط
-         return view('backend.mountains.show', compact('data','arman'));
+         $data = ArmanThreater::find($id);
+         $arman = Arman::find($data->arman_id);
+         return view('backend.theaters.show', compact('data','arman'));
      }
 
      /**
@@ -75,13 +75,13 @@ class ArmanTheatersController extends Controller
       */
      public function edit($id)
      {
-         $data = ArmanMountain::find($id);
+         $data = ArmanThreater::find($id);
          $armans = Arman::all();
-         return view('backend.mountains.edit', compact('data', 'id','armans'));
+         return view('backend.theaters.edit', compact('data', 'id','armans'));
      }
 
 
-     public function update(Request $request, ArmanMountain $mountain)
+     public function update(Request $request, ArmanThreater $theater)
      {
          $request->validate([
              'arman_id' => 'required',
@@ -102,8 +102,8 @@ class ArmanTheatersController extends Controller
 
          if ($request->hasFile('image')) {
              // Delete the old image if exists
-             if ($mountain->image && file_exists(public_path('images/' . $mountain->image))) {
-                 unlink(public_path('images/' . $mountain->image));
+             if ($theater->image && file_exists(public_path('images/' . $theater->image))) {
+                 unlink(public_path('images/' . $theater->image));
              }
 
              // Upload the new image
@@ -115,19 +115,19 @@ class ArmanTheatersController extends Controller
              $form_data['image'] = $new_name;
          }
 
-         $mountain->update($form_data);
+         $theater->update($form_data);
 
-         return redirect()->route('mountains.index')
-             ->with('success', 'mountains updated successfully');
+         return redirect()->route('theaters.index')
+             ->with('success', 'theaters updated successfully');
      }
      /**
       * Remove the specified resource from storage.
       */
-     public function destroy(ArmanMountain $mountain)
+     public function destroy(ArmanThreater $theater)
      {
-         $mountain->delete();
+         $theater->delete();
 
-         return redirect()->route('mountain.index')
-             ->with('success', 'mountain deleted successfully');
+         return redirect()->route('theaters.index')
+             ->with('success', 'theater deleted successfully');
      }
 }

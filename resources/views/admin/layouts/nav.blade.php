@@ -457,7 +457,33 @@
 
     </ul>
   </li>
+{{-- Arman theaters --}}
 
+
+<li class="nav-item has-treeview">
+    <a href="#" class="nav-link">
+      <i class="nav-icon fas fa-users"></i>
+      <p>
+         Armenia theaters
+        <i class="fas fa-angle-left right"></i>
+      </p>
+    </a>
+    <ul class="nav nav-treeview">
+      <li class="nav-item">
+        <a href="{{url('/adminpanel/theaters/create')}}" class="nav-link">
+          <i class="far fa-circle nav-icon"></i>
+          <p>Add Armenia theaters</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="{{url('/adminpanel/theaters ')}}" class="nav-link">
+          <i class="far fa-circle nav-icon"></i>
+          <p>All Armenia theaters</p>
+        </a>
+      </li>
+
+    </ul>
+  </li>
 
 
 

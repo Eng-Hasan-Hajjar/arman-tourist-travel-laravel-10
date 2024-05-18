@@ -31,8 +31,8 @@
                     </div>
                     @endif
                     <div class="card-body "style="margin-left:20%;width: 70%;">
-                        {!! Form::open(['url' => '/adminpanel/caves', 'class' => 'form-horizontal', 'method' => 'post','files'=> true]) !!}
-                           @include('backend.caves.formAdd')
+                        {!! Form::open(['url' => '/adminpanel/theaters', 'class' => 'form-horizontal', 'method' => 'post','files'=> true]) !!}
+                           @include('backend.theaters.formAdd')
                         {!! Form::close()  !!}
                     </div>
                 </div>
