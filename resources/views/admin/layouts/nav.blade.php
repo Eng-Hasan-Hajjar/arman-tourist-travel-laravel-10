@@ -319,6 +319,34 @@
     </ul>
   </li>
 
+{{-- Arman mountains --}}
+
+
+<li class="nav-item has-treeview">
+    <a href="#" class="nav-link">
+      <i class="nav-icon fas fa-users"></i>
+      <p>
+         Armenia mountains
+        <i class="fas fa-angle-left right"></i>
+      </p>
+    </a>
+    <ul class="nav nav-treeview">
+      <li class="nav-item">
+        <a href="{{url('/adminpanel/mountains/create')}}" class="nav-link">
+          <i class="far fa-circle nav-icon"></i>
+          <p>Add Armenia mountains</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="{{url('/adminpanel/mountains')}}" class="nav-link">
+          <i class="far fa-circle nav-icon"></i>
+          <p>All Armenia mountains</p>
+        </a>
+      </li>
+
+    </ul>
+  </li>
+
 
 
 
