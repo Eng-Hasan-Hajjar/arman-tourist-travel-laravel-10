@@ -16,9 +16,9 @@
                 <div class="container hcontainer"  >
                     <div class="card hcard helement hcard-body" >
 
-                        <div class="card-header"><p  class="float-left">all caves </p></div>
+                        <div class="card-header"><p  class="float-left">all springs </p></div>
                         <div class="card-header">
-                            <a href="{{ route('caves.create') }}" class=" btn btn-success float-right">create new </a>
+                            <a href="{{ route('springs.create') }}" class=" btn btn-success float-right">create new </a>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -46,7 +46,7 @@
                                 <tbody>
 
 
-                                    @foreach ($caves as $row)
+                                    @foreach ($springs as $row)
                                         <tr>
                                             @foreach ($armans as $arman )
                                                @if( $row->arman_id ==  $arman->id)
@@ -64,16 +64,16 @@
                                                     class="img-thumbnail" width="75" />
                                             </td>
                                             <td>
-                                                <a href="{{ route('caves.show', $row->id) }}"
+                                                <a href="{{ route('springs.show', $row->id) }}"
                                                     class="btn btn-primary">Show</a>
-                                                <a href="{{ route('caves.edit', $row->id) }}"
+                                                <a href="{{ route('springs.edit', $row->id) }}"
                                                     class="btn btn-warning">Edit</a>
                                             </td>
 
                                             <td>
 
                                                 <form method="post" class="delete_form"
-                                                    action="{{ route('caves.destroy', $row->id) }}">
+                                                    action="{{ route('springs.destroy', $row->id) }}">
                                                     {{ csrf_field() }}
                                                     <input type="hidden" name="_method" value="DELETE" />
                                                     <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this record?');" >Delete</button>
@@ -88,7 +88,7 @@
 
 
                             </table>
-                            {!! $caves->links() !!}
+                            {!! $springs->links() !!}
                         </div>
                         <!-- /.card-body -->
                     </div>

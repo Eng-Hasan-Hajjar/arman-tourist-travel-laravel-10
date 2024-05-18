@@ -25,9 +25,9 @@
     <label for="image" class="col-md-4 col-form-label text-md-left"> image </label>
     <div class="col-md-6">
         <div style="">
-            @if (isset($caves))
-                @if ($caves->image != '')
-                    <img src="{{ Request::root() . '/images/' . $caves->image }}"
+            @if (isset($springs))
+                @if ($springs->image != '')
+                    <img src="{{ Request::root() . '/images/' . $springs->image }}"
                     style="width: 50%;high:50%"
                     />
                     <br>
