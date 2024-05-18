@@ -3,7 +3,7 @@
 @extends('admin.layouts.layout')
 
 @section('title')
-    control of camping places
+detailes
 @endsection
 
 @section('header')
@@ -16,26 +16,25 @@
 @section('content')
     <div class="container hcontainer">
         <div class="card hcard">
-            <div class="card-header">تفاصيل الحجز</div>
+            <div class="card-header"> detailes </div>
 
             <div class="card-body hcard-body">
                 <!-- تفاصيل الحجز -->
 
-                <p><strong> المستخدم:</strong> {{ $reservation->user->name }}</p>
-                <p><strong> المكان:</strong> {{ $reservation->campGround->name}}</p>
-                <p><strong>تاريخ البداية:</strong> {{ $reservation->start_date }}</p>
-                <p><strong>تاريخ الانتهاء:</strong> {{ $reservation->end_date }}</p>
+                <p><strong> user:</strong> {{ $reservation->user->name }}</p>
+                <p><strong>start date :</strong> {{ $reservation->start_date }}</p>
+                <p><strong>end date :</strong> {{ $reservation->end_date }}</p>
 
                 <!-- أزرار التحكم -->
                 <div class="btn-group">
-                    <a href="{{ route('reservations.edit', $reservation) }}" class="btn btn-primary">تعديل</a>
-              
+                    <a href="{{ route('reservations.edit', $reservation) }}" class="btn btn-primary"> edit </a>
+
                     <form action="{{ route('reservations.destroy', $reservation) }}" method="POST">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class="btn btn-danger" onclick="return confirm('هل أنت متأكد من رغبتك في حذف هذا الحجز؟')">حذف</button>
+                        <button type="submit" class="btn btn-danger" onclick="return confirm('هل أنت متأكد من رغبتك في حذف هذا الحجز؟')"> del </button>
                     </form>
-                    <a href="{{ url('/adminpanel/reservations') }}" class="btn btn-secondary">رجوع</a>
+                    <a href="{{ url('/adminpanel/reservations') }}" class="btn btn-secondary"> reservation </a>
 
                 </div>
             </div>

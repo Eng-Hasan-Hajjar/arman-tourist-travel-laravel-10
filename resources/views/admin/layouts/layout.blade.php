@@ -191,7 +191,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="{{Request::root()}}/admin/dist/img/user3-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <!-- img src="{{Request::root()}}/admin/dist/img/user3-160x160.jpg" class="img-circle elevation-2" alt="User Image" -->
         </div>
         <div class="info">
          <!-- <a href="#" class="d-block">{Auth::user()->name}}</a> -->
@@ -272,11 +272,7 @@
 
 
   <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
-    All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.0.4
-    </div>
+
   </footer>
 
   <!-- Control Sidebar -->

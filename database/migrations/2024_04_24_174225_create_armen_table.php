@@ -17,6 +17,7 @@ return new class extends Migration
 
             $table->string('name');
             $table->text('description');
+            
             $table->string('location');
             $table->string('image');
             $table->string('airport')->nullable(true);

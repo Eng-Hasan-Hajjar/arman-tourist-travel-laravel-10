@@ -29,97 +29,6 @@
        website --}}
 
 
-<li class="nav-item has-treeview">
-  <a href="#" class="nav-link">
-    <i class="nav-icon fas fa-users"></i>
-    <p>
-    pages of website
-      <i class="fas fa-angle-left right"></i>
-    </p>
-  </a>
-  <ul class="nav nav-treeview">
-  <li class="nav-item">
-      <a href="{{url('/home')}}" class="nav-link">
-        <i class="far fa-circle nav-icon"></i>
-        <p>home website</p>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="{{url('/ShowAllBuilding')}}" class="nav-link">
-        <i class="far fa-circle nav-icon"></i>
-        <p>all estates</p>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="{{url('/search')}}" class="nav-link">
-        <i class="far fa-circle nav-icon"></i>
-        <p>search</p>
-      </a>
-    </li>
-
-  </ul>
-</li>
-
-
-
-{{-- visitors --}}
-
-
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-users"></i>
-              <p>
-               Control all visitors
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{{url('/adminpanel/visitors/create')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add visitors</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{url('/adminpanel/visitors')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>All visitors</p>
-                </a>
-              </li>
-
-            </ul>
-          </li>
-
-
-
-
-{{-- Arman --}}
-
-
-<li class="nav-item has-treeview">
-    <a href="#" class="nav-link">
-      <i class="nav-icon fas fa-users"></i>
-      <p>
-        reservations
-        <i class="fas fa-angle-left right"></i>
-      </p>
-    </a>
-    <ul class="nav nav-treeview">
-      <li class="nav-item">
-        <a href="{{url('/adminpanel/reservations/create')}}" class="nav-link">
-          <i class="far fa-circle nav-icon"></i>
-          <p>Add reservation</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="{{url('/adminpanel/reservations')}}" class="nav-link">
-          <i class="far fa-circle nav-icon"></i>
-          <p>All reservations</p>
-        </a>
-      </li>
-
-    </ul>
-  </li>
 
 
 {{-- Arman --}}
@@ -515,6 +424,99 @@
     </ul>
   </li>
 
+
+
+{{-- visitors --}}
+
+
+<li class="nav-item has-treeview">
+    <a href="#" class="nav-link">
+      <i class="nav-icon fas fa-users"></i>
+      <p>
+       Control all visitors
+        <i class="fas fa-angle-left right"></i>
+      </p>
+    </a>
+    <ul class="nav nav-treeview">
+      <li class="nav-item">
+        <a href="{{url('/adminpanel/visitors/create')}}" class="nav-link">
+          <i class="far fa-circle nav-icon"></i>
+          <p>Add visitors</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="{{url('/adminpanel/visitors')}}" class="nav-link">
+          <i class="far fa-circle nav-icon"></i>
+          <p>All visitors</p>
+        </a>
+      </li>
+
+    </ul>
+  </li>
+
+
+
+
+{{-- reservations --}}
+
+
+<li class="nav-item has-treeview">
+<a href="#" class="nav-link">
+<i class="nav-icon fas fa-users"></i>
+<p>
+reservations
+<i class="fas fa-angle-left right"></i>
+</p>
+</a>
+<ul class="nav nav-treeview">
+<li class="nav-item">
+<a href="{{url('/adminpanel/reservations/create')}}" class="nav-link">
+  <i class="far fa-circle nav-icon"></i>
+  <p>Add reservation</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="{{url('/adminpanel/reservations')}}" class="nav-link">
+  <i class="far fa-circle nav-icon"></i>
+  <p>All reservations</p>
+</a>
+</li>
+
+</ul>
+</li>
+
+
+{{-- website --}}
+<li class="nav-item has-treeview">
+    <a href="#" class="nav-link">
+      <i class="nav-icon fas fa-users"></i>
+      <p>
+      pages of website
+        <i class="fas fa-angle-left right"></i>
+      </p>
+    </a>
+    <ul class="nav nav-treeview">
+    <li class="nav-item">
+        <a href="{{url('/home')}}" class="nav-link">
+          <i class="far fa-circle nav-icon"></i>
+          <p>home website</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="{{url('/ShowAllBuilding')}}" class="nav-link">
+          <i class="far fa-circle nav-icon"></i>
+          <p>all estates</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="{{url('/search')}}" class="nav-link">
+          <i class="far fa-circle nav-icon"></i>
+          <p>search</p>
+        </a>
+      </li>
+
+    </ul>
+  </li>
 
 
 

@@ -3,7 +3,7 @@
 @extends('admin.layouts.layout')
 
 @section('title')
-    control of camping places
+create new
 @endsection
 
 @section('header')
@@ -18,7 +18,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card ">
-                    <div class="card-header ">إنشاء حجز جديد</div>
+                    <div class="card-header "> create new  </div>
                         @if ($errors->any())
                         <div class="alert alert-danger">
                         <ul>
@@ -29,49 +29,27 @@
                     </div>
                     @endif
                     <div class="card-body ">
-
                         <div class="form-group">
-                            <label for="user_id">اسم المستخدم</label>
+                            <label for="user_id"> name </label>
                             <input type="text" name="user_name" class="form-control" id="user_name" value="{{ Auth::user()->name }}" disabled>
                         </div>
-
                         <form method="POST" action="{{ route('reservations.store') }}">
                             @csrf
-
                             <div class="form-group">
-                                <label for="user_id">رقم المستخدم</label>
+                                <label for="user_id">no user </label>
                                 <input type="text" name="user_id" class="form-control" id="user_id" value="{{ Auth::user()->id }}" disabled>
                             </div>
-
                             <div class="form-group">
-                                <label for="camp_ground_id"> المكان</label>
-                                <select name="camp_ground_id" class="form-control" id="camp_ground_id">
-                                    @foreach($campgrounds as $campground)
-                                        <option value="{{ $campground->id }}">{{ $campground->name }}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="start_date">تاريخ البداية</label>
+                                <label for="start_date"> start date </label>
                                 <input type="date" name="start_date" class="form-control" id="start_date" value="{{ old('start_date') }}">
                             </div>
-
                             <div class="form-group">
-                                <label for="end_date">تاريخ الانتهاء</label>
+                                <label for="end_date"> end date </label>
                                 <input type="date" name="end_date" class="form-control" id="end_date" value="{{ old('end_date') }}">
                             </div>
-
-                            <button type="submit" class="btn btn-primary">حفظ الحجز</button>
-
-
+                            <button type="submit" class="btn btn-primary"> reserve </button>
                                 <!-- زر الرجوع -->
-                                <a href="{{ url('/adminpanel/reservations') }}" class="btn btn-secondary" >  الحجوزات</a>
-
-
-
-
-
+                                <a href="{{ url('/adminpanel/reservations') }}" class="btn btn-secondary" >  reservations</a>
                         </form>
                     </div>
                 </div>

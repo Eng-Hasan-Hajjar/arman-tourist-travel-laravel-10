@@ -3,7 +3,7 @@
 @extends('admin.layouts.layout')
 
 @section('title')
-    التحكم
+    control
 @endsection
 
 @section('header')
@@ -14,29 +14,29 @@
 @section('content')
     <div class="container hcontainer">
         <div class="card hcard helement hcard-body">
-            <div class="card-header  "><p  class="float-right">جميع الزائرين</p></div>
+            <div class="card-header  "><p  class="float-left"> all  </p></div>
             <div class="card-header">
-                <a href="{{ route('visitors.create') }}" class=" btn btn-success float-right">إنشاء جديد</a>
+                <a href="{{ route('visitors.create') }}" class=" btn btn-success float-right"> create new  </a>
             </div>
             <div class="card-body">
                 <table class="table">
                     <thead>
                         <tr>
-                            <th> الاسم</th>
-                            <th> الهاتف</th>
+                            <th> name </th>
+                            <th> phon </th>
 
-                            <th> العمل</th>
-                            <th>الهواية</th>
-                            <th> الجنسية</th>
-                            <th> الموقع الحالي</th>
+                            <th> work </th>
+                            <th> hobi </th>
+                            <th>  nationality</th>
+                            <th> current location  </th>
 
-                            <th> الجنس</th>
-                            <th> عدد المرافقين</th>
+                            <th> gender </th>
+                            <th> companion  </th>
 
-                            <th> الميلاد</th>
+                            <th> birth date </th>
 
 
-                            <th>التحكم</th>
+                            <th>control</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -54,7 +54,7 @@
                                 <td>{{ $visitor->current_location }}</td>
 
                                 <td>
-                                    @if($visitor->gender == 0) ذكر @else أنثى @endif
+                                    @if($visitor->gender == 0) male  @else female @endif
 
                                 </td>
                                 <td>{{ $visitor->num_companion }}</td>
@@ -63,15 +63,15 @@
 
                                 <td>
                                     <div class="">
-                                        <a style="margin: 10px" href="{{ route('visitors.show', $visitor) }}" class="btn btn-info"> التفاصيل</a>
+                                        <a style="margin: 10px" href="{{ route('visitors.show', $visitor) }}" class="btn btn-info"> detail </a>
                                         <br>
-                                        <a style="margin: 10px" href="{{ route('visitors.edit', $visitor) }}" class="btn btn-primary">تعديل</a>
+                                        <a style="margin: 10px" href="{{ route('visitors.edit', $visitor) }}" class="btn btn-primary"> edit </a>
                                         <br>
                                         <a style="margin-left: 30px">
                                         <form action="{{ route('visitors.destroy', $visitor) }}" method="POST">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="btn btn-danger"onclick="return confirm('هل أنت متأكد من رغبتك في حذف هذا الزائر؟ ')">حذف</button>
+                                            <button type="submit" class="btn btn-danger"onclick="return confirm('هل أنت متأكد من رغبتك في حذف هذا الزائر؟ ')"> del </button>
                                         </form>
                                         </a>
                                     </div>
