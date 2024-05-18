@@ -18,6 +18,9 @@ use App\Http\Controllers\ArmanSlopesController;
 use App\Http\Controllers\ArmanSpringsController;
 use App\Http\Controllers\ArmanTheatersController;
 
+use App\Http\Controllers\VisitorController;
+
+use App\Http\Controllers\ReservationController;
 
 
 
@@ -100,6 +103,9 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('/adminpanel/springs', ArmanSpringsController::class);
     Route::resource('/adminpanel/theaters', ArmanTheatersController::class);
 
+    Route::resource('/adminpanel/visitors', VisitorController::class);
+
+    Route::resource('/adminpanel/reservations', ReservationController::class);
 
 
 

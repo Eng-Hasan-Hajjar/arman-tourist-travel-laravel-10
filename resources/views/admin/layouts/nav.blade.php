@@ -1,3 +1,4 @@
+    {{--
 
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
@@ -25,7 +26,7 @@
           </li>
 
 
-          {{-- website --}}
+       website --}}
 
 
 <li class="nav-item has-treeview">
@@ -61,28 +62,28 @@
 
 
 
-{{-- users --}}
+{{-- visitors --}}
 
 
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
-               Control all members
+               Control all visitors
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{url('/adminpannel/users/create')}}" class="nav-link">
+                <a href="{{url('/adminpanel/visitors/create')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Add user</p>
+                  <p>Add visitors</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{url('/adminpannel/users')}}" class="nav-link">
+                <a href="{{url('/adminpanel/visitors')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>All users</p>
+                  <p>All visitors</p>
                 </a>
               </li>
 
@@ -90,6 +91,35 @@
           </li>
 
 
+
+
+{{-- Arman --}}
+
+
+<li class="nav-item has-treeview">
+    <a href="#" class="nav-link">
+      <i class="nav-icon fas fa-users"></i>
+      <p>
+        reservations
+        <i class="fas fa-angle-left right"></i>
+      </p>
+    </a>
+    <ul class="nav nav-treeview">
+      <li class="nav-item">
+        <a href="{{url('/adminpanel/reservations/create')}}" class="nav-link">
+          <i class="far fa-circle nav-icon"></i>
+          <p>Add reservation</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="{{url('/adminpanel/reservations')}}" class="nav-link">
+          <i class="far fa-circle nav-icon"></i>
+          <p>All reservations</p>
+        </a>
+      </li>
+
+    </ul>
+  </li>
 
 
 {{-- Arman --}}
