@@ -39,89 +39,89 @@ class DatabaseSeeder extends Seeder
             \App\Models\Arman::create([
                 'name' => 'Aragatsotn',
                 'description' => 'description',
-                'location'=>'123456789',
-                'image' => 'Test User 3',
-                'airport' => 'description',
+                'location'=>'Aragatsotn',
+                'image' => 'Aragatsotn.jpeg',
+                'airport' => 'Aragatsotn',
 
               ]);
                \App\Models\Arman::create([
                 'name' => 'Ararat',
                 'description' => 'description',
-                'location'=>'123456789',
-                'image' => 'Test User 3',
-                'airport' => 'description',
+                'location'=>'Ararat',
+                'image' => 'Ararat.jpeg',
+                'airport' => 'Ararat',
 
               ]);
               \App\Models\Arman::create([
                 'name' => 'Armavir',
                 'description' => 'description',
-                'location'=>'123456789',
-                'image' => 'Test User 3',
-                'airport' => 'description',
+                'location'=>'Armavir',
+                'image' => 'Armavir.jpeg',
+                'airport' => 'Armavir',
 
               ]);
               \App\Models\Arman::create([
                 'name' => 'Gegharkunik',
                 'description' => 'description',
-                'location'=>'123456789',
-                'image' => 'Test User 3',
-                'airport' => 'description',
+                'location'=>'Gegharkunik',
+                'image' => 'Gegharkunik.jpeg',
+                'airport' => 'Gegharkunik',
 
               ]);
               \App\Models\Arman::create([
                 'name' => 'Kotayk',
                 'description' => 'description',
-                'location'=>'123456789',
-                'image' => 'Test User 3',
-                'airport' => 'description',
+                'location'=>'Kotayk',
+                'image' => 'Kotayk.jpeg',
+                'airport' => 'Kotayk',
 
               ]);
               \App\Models\Arman::create([
                 'name' => 'Lori',
                 'description' => 'description',
-                'location'=>'123456789',
-                'image' => 'Test User 3',
-                'airport' => 'description',
+                'location'=>'Lori',
+                'image' => 'Lori.jpeg',
+                'airport' => 'Lori',
 
               ]);
               \App\Models\Arman::create([
                 'name' => 'Shirak',
                 'description' => 'description',
-                'location'=>'123456789',
-                'image' => 'Test User 3',
-                'airport' => 'description',
+                'location'=>'Shirak',
+                'image' => 'Shirak.jpeg',
+                'airport' => 'Shirak',
 
               ]);
               \App\Models\Arman::create([
                 'name' => 'Syunik',
                 'description' => 'description',
-                'location'=>'123456789',
-                'image' => 'Test User 3',
-                'airport' => 'description',
+                'location'=>'Syunik',
+                'image' => 'Syunik.jpeg',
+                'airport' => 'Syunik',
 
               ]);
               \App\Models\Arman::create([
                 'name' => 'Tavush',
                 'description' => 'description',
-                'location'=>'123456789',
-                'image' => 'Test User 3',
-                'airport' => 'description',
+                'location'=>'Tavush',
+                'image' => 'Tavush.jpeg',
+                'airport' => 'Tavush',
 
               ]);
               \App\Models\Arman::create([
                 'name' => 'Vayots Dzor',
                 'description' => 'description',
-                'location'=>'123456789',
-                'image' => 'Test User 3',
-                'airport' => 'description',
+                'location'=>'Vayots Dzor',
+                'image' => 'Vayots Dzor.jpeg',
+                'airport' => 'Vayots Dzor',
 
               ]);
               \App\Models\Arman::create([
                 'name' => 'Yerevan',
                 'description' => 'description',
-                'location'=>'123456789',
-                'image' => 'Test User 3',
-                'airport' => 'description',
+                'location'=>'Yerevan',
+                'image' => 'Yerevan.jpeg',
+                'airport' => 'Yerevan',
 
               ]);
     }

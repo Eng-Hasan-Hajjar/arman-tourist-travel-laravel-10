@@ -4,28 +4,57 @@
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
-                <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
-                    </a>
-                </div>
+
 
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
-                    </x-nav-link>
-                </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('campground.index')" :active="request()->routeIs('campground.index')">
-                        {{ __('Camping grounds') }}
-                    </x-nav-link>
-                </div>
+
+
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('arman.index')" :active="request()->routeIs('arman.index')">
-                        {{ __('Armenia') }}
+                        {{ __('regions') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('castles.index')" :active="request()->routeIs('castles.index')">
+                        {{ __('castles') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('caves.index')" :active="request()->routeIs('caves.index')">
+                        {{ __('caves') }}
+                    </x-nav-link>
+                </div>
+
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('churches.index')" :active="request()->routeIs('churches.index')">
+                        {{ __('churches') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('forests.index')" :active="request()->routeIs('forests.index')">
+                        {{ __('forests') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('gardens.index')" :active="request()->routeIs('gardens.index')">
+                        {{ __('gardens') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('lakes.index')" :active="request()->routeIs('lakes.index')">
+                        {{ __('lakes') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('malls.index')" :active="request()->routeIs('malls.index')">
+                        {{ __('malls') }}
+                    </x-nav-link>
+                </div>
+
+
+
             </div>
 
             <!-- Settings Dropdown -->
@@ -74,6 +103,55 @@
         </div>
     </div>
 
+
+
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex">
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('mountains.index')" :active="request()->routeIs('mountains.index')">
+                        {{ __('mountains') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('museums.index')" :active="request()->routeIs('museums.index')">
+                        {{ __('museums') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('places.index')" :active="request()->routeIs('places.index')">
+                        {{ __('places') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('slopes.index')" :active="request()->routeIs('slopes.index')">
+                        {{ __('slopes') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('springs.index')" :active="request()->routeIs('springs.index')">
+                        {{ __('springs') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('theaters.index')" :active="request()->routeIs('theaters.index')">
+                        {{ __('theaters') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('campground.index')" :active="request()->routeIs('campground.index')">
+                        {{ __('Camping grounds') }}
+                    </x-nav-link>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">

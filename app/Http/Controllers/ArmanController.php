@@ -12,10 +12,9 @@ class ArmanController extends Controller
      */
     public function index()
     {
-        $armans = Arman::latest()->paginate(5);
+        $armans = Arman::all();
 
-        return view('backend.arman.index', compact('armans'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);
+        return view('backend.arman.index', compact('armans'));
     }
 
     /**

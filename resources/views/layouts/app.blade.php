@@ -13,24 +13,48 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="frontendAsset/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="frontendAsset/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="frontendAsset/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="frontendAsset/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Template Stylesheet -->
+        <link href="frontendAsset/css/style.css" rel="stylesheet">
+
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
             @include('layouts.navigation')
 
-            <!-- Page Heading -->
-            @if (isset($header))
-                <header class="bg-white shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endif
 
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
+            <div class="container-fluid bg-primary py-5 mb-5 hero-header3">
+                <div class="container py-5">
+                    <div class="row justify-content-center py-5">
+                    </div>
+                </div>
+            </div>
+
+            {{ $slot }}
+
+            <div class="container-fluid bg-primary py-5 mb-5 hero-header2">
+                <div class="container py-5">
+                    <div class="row justify-content-center py-5">
+                    </div>
+                </div>
+            </div>
+
+
         </div>
+
+
+
+
     </body>
+
+
+
 </html>

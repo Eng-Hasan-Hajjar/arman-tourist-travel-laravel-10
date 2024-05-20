@@ -1,7 +1,7 @@
 @extends('admin.layouts.layout')
 
 @section('title')
-التحكم
+ control
 @endsection
 
 @section('header')
@@ -82,7 +82,7 @@
 
 
                             </table>
-                            {!! $armans->links() !!}
+
                         </div>
                         <!-- /.card-body -->
                     </div>
