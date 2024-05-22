@@ -163,7 +163,7 @@
         <div class="row g-3">
             <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
                 <a class="position-relative d-block h-100 overflow-hidden" href="/caves">
-                    <img class="img-fluid position-absolute w-100 h-100" src="frontendAsset/img/Ampert Castle.jpeg" alt="" style="object-fit: cover;">
+                    <img class="img-fluid position-absolute w-100 h-100" src="frontendAsset/img/Areni Cave.jpeg" alt="" style="object-fit: cover;">
                     <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">caves</div>
                 </a>
             </div>
@@ -171,19 +171,19 @@
                 <div class="row g-3">
                     <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
                         <a class="position-relative d-block overflow-hidden" href="/malls">
-                            <img class="img-fluid" src="frontendAsset/img/Ethchmiazin church2.jpeg" alt="">
+                            <img class="img-fluid" src="frontendAsset/img/Dalma Mall.jpeg" alt="">
                             <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">malls</div>
                         </a>
                     </div>
                     <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                        <a class="position-relative d-block overflow-hidden" href="/mountains">
-                            <img class="img-fluid" src="frontendAsset/img/republic square2.jpeg" alt="">
-                            <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"> mountains</div>
+                        <a class="position-relative d-block overflow-hidden" href="/forests">
+                            <img class="img-fluid" src="frontendAsset/img/Dilijan forest2.jpeg" alt="">
+                            <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"> forests</div>
                         </a>
                     </div>
                     <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
                         <a class="position-relative d-block overflow-hidden" href="/slopes">
-                            <img class="img-fluid" src="frontendAsset/img/Lake sevan2.jpeg" alt="">
+                            <img class="img-fluid" src="frontendAsset/img/Jermuk waterfall2.jpeg" alt="">
                             <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">slopes</div>
                         </a>
                     </div>
@@ -205,19 +205,20 @@
                     <div class="row g-3">
                         <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
                             <a class="position-relative d-block overflow-hidden" href="/museums">
-                                <img class="img-fluid" src="frontendAsset/img/Ethchmiazin church2.jpeg" alt="">
+                                <img class="img-fluid" src="frontendAsset/img/Matenadaran museum.jpeg" alt="">
                                 <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">museums</div>
                             </a>
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                            <a class="position-relative d-block overflow-hidden" href="/forests">
-                                <img class="img-fluid" src="frontendAsset/img/republic square2.jpeg" alt="">
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"> forests</div>
+                            <a class="position-relative d-block overflow-hidden" href="/mountains">
+                                <img class="img-fluid" src="frontendAsset/img/mountain.jpeg" alt="">
+                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"> mountains</div>
                             </a>
                         </div>
+
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
                             <a class="position-relative d-block overflow-hidden" href="/gardens">
-                                <img class="img-fluid" src="frontendAsset/img/Lake sevan2.jpeg" alt="">
+                                <img class="img-fluid" src="frontendAsset/img/Cascade.jpeg" alt="">
                                 <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">gardens</div>
                             </a>
                         </div>
@@ -225,7 +226,7 @@
                 </div>
                 <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
                     <a class="position-relative d-block h-100 overflow-hidden" href="/springs">
-                        <img class="img-fluid position-absolute w-100 h-100" src="frontendAsset/img/Ampert Castle.jpeg" alt="" style="object-fit: cover;">
+                        <img class="img-fluid position-absolute w-100 h-100" src="frontendAsset/img/Jermuk waterfall.jpeg" alt="" style="object-fit: cover;">
                         <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">springs</div>
                     </a>
                 </div>
