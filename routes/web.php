@@ -30,6 +30,53 @@ use App\Http\Controllers\ReservationController;
 
 Route::get('/', function () {
     return view('frontend.index');
+
+});
+Route::get('/destination', function () {
+    return view('frontend.destination');
+});
+Route::get('/caves', function () {
+    return view('frontend.caves');
+});
+
+Route::get('/castles', function () {
+    return view('frontend.castles');
+});
+
+Route::get('/lakes', function () {
+    return view('frontend.lakes');
+});
+
+Route::get('/malls', function () {
+    return view('frontend.malls');
+});
+
+Route::get('/mountains', function () {
+    return view('frontend.mountains');
+});
+
+Route::get('/slopes', function () {
+    return view('frontend.slopes');
+});
+
+
+Route::get('/museums', function () {
+    return view('frontend.museums');
+});
+
+Route::get('/forests', function () {
+    return view('frontend.forests');
+});
+
+Route::get('/gardens', function () {
+    return view('frontend.gardens');
+});
+
+Route::get('/campgrounds', function () {
+    return view('frontend.campgrounds');
+});
+Route::get('/springs', function () {
+    return view('frontend.springs');
 });
 
 Route::get('/n', function () {
