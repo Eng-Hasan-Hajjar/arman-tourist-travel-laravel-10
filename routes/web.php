@@ -46,6 +46,9 @@ Route::get('/castles', function () {
 Route::get('/lakes', function () {
     return view('frontend.lakes');
 });
+Route::get('/churches', function () {
+    return view('frontend.churches');
+});
 
 Route::get('/malls', function () {
     return view('frontend.malls');
