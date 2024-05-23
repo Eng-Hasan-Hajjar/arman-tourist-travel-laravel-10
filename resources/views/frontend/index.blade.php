@@ -45,28 +45,25 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="/" class="nav-item nav-link active">Home</a>
+                    <a href="about" class="nav-item nav-link">About</a>
                     <a href="destination" class="nav-item nav-link">destination</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">your distination</a>
                         <div class="dropdown-menu m-0">
-                            <a href="destination.html" class="dropdown-item">castles</a>
-                            <a href="booking.html" class="dropdown-item">caves</a>
-                            <a href="team.html" class="dropdown-item">springs</a>
-                            <a href="testimonial.html" class="dropdown-item">churches</a>
-                         
-
-                            <a href="destination.html" class="dropdown-item">forests</a>
-                            <a href="booking.html" class="dropdown-item">gardens</a>
-                            <a href="team.html" class="dropdown-item">lakes</a>
-                            <a href="testimonial.html" class="dropdown-item">malls</a>
-                            <a href="404.html" class="dropdown-item">mountains</a>
-
-                            <a href="destination.html" class="dropdown-item">museums</a>
-                            <a href="team.html" class="dropdown-item">slopes</a>
-                            <a href="testimonial.html" class="dropdown-item">threaters</a>
-                            <a href="404.html" class="dropdown-item">campgrounds</a>
+                            <a href="castles" class="dropdown-item">castles</a>
+                            <a href="caves" class="dropdown-item">caves</a>
+                            <a href="springs" class="dropdown-item">springs</a>
+                            <a href="churches" class="dropdown-item">churches</a>
+                            <a href="forests" class="dropdown-item">forests</a>
+                            <a href="gardens" class="dropdown-item">gardens</a>
+                            <a href="lakes" class="dropdown-item">lakes</a>
+                            <a href="malls" class="dropdown-item">malls</a>
+                            <a href="mountains" class="dropdown-item">mountains</a>
+                            <a href="museums" class="dropdown-item">museums</a>
+                            <a href="slopes" class="dropdown-item">slopes</a>
+                            <a href="threaters" class="dropdown-item">threaters</a>
+                            <a href="campgrounds" class="dropdown-item">campgrounds</a>
                         </div>
                     </div>
                 </div>

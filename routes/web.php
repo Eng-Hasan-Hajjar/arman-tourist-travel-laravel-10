@@ -78,6 +78,9 @@ Route::get('/campgrounds', function () {
 Route::get('/springs', function () {
     return view('frontend.springs');
 });
+Route::get('/threaters', function () {
+    return view('frontend.threaters');
+});
 
 Route::get('/about', function () {
     return view('frontend.about');
