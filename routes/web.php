@@ -79,6 +79,13 @@ Route::get('/springs', function () {
     return view('frontend.springs');
 });
 
+Route::get('/about', function () {
+    return view('frontend.about');
+});
+Route::get('/contact', function () {
+    return view('frontend.contact');
+});
+
 Route::get('/n', function () {
     return view('welcome');
 });
