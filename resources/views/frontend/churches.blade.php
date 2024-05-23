@@ -34,8 +34,8 @@
     <div class="container-xxl py-5 destination">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Destination</h6>
-                <h1 class="mb-5">Popular Destination</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3">Churches</h6>
+                <h1 class="mb-5">Popular Churches</h1>
             </div>
             <div class="row g-3">
                 <div class="col-lg-7 col-md-6">
@@ -48,22 +48,22 @@
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="frontendAsset/img/republic square2.jpeg" alt="">
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Republic square</div>
+                                <img class="img-fluid" src="frontendAsset/img/Odzun monstery.jpeg" alt="">
+                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Odzun monstery</div>
                             </a>
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                            <a class="position-relative d-block overflow-hidden" href="/lakes">
-                                <img class="img-fluid" src="frontendAsset/img/Lake sevan2.jpeg" alt="">
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Lakes</div>
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="frontendAsset/img/Haghpat monestre.jpeg" alt="">
+                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Haghpat monestre</div>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
-                    <a class="position-relative d-block h-100 overflow-hidden" href="/castles">
-                        <img class="img-fluid position-absolute w-100 h-100" src="frontendAsset/img/Ampert Castle.jpeg" alt="" style="object-fit: cover;">
-                        <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Castles</div>
+                    <a class="position-relative d-block h-100 overflow-hidden" href="">
+                        <img class="img-fluid position-absolute w-100 h-100" src="frontendAsset/img/Akhtala monestry.jpeg" alt="" style="object-fit: cover;">
+                        <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Akhtala monestry</div>
                     </a>
                 </div>
             </div>
@@ -77,29 +77,29 @@
 
         <div class="row g-3">
             <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
-                <a class="position-relative d-block h-100 overflow-hidden" href="/caves">
-                    <img class="img-fluid position-absolute w-100 h-100" src="frontendAsset/img/Areni Cave.jpeg" alt="" style="object-fit: cover;">
-                    <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">caves</div>
+                <a class="position-relative d-block h-100 overflow-hidden" href="">
+                    <img class="img-fluid position-absolute w-100 h-100" src="frontendAsset/img/churches2.jpeg" alt="" style="object-fit: cover;">
+                    <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">churches2</div>
                 </a>
             </div>
             <div class="col-lg-7 col-md-6">
                 <div class="row g-3">
                     <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                        <a class="position-relative d-block overflow-hidden" href="/malls">
-                            <img class="img-fluid" src="frontendAsset/img/Dalma Mall.jpeg" alt="">
-                            <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">malls</div>
+                        <a class="position-relative d-block overflow-hidden" href="">
+                            <img class="img-fluid" src="frontendAsset/img/churches23.jpeg" alt="">
+                            <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">churches23</div>
                         </a>
                     </div>
                     <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                        <a class="position-relative d-block overflow-hidden" href="/forests">
-                            <img class="img-fluid" src="frontendAsset/img/Dilijan forest2.jpeg" alt="">
-                            <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"> forests</div>
+                        <a class="position-relative d-block overflow-hidden" href="">
+                            <img class="img-fluid" src="frontendAsset/img/churches24.jpeg" alt="">
+                            <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"> churches24</div>
                         </a>
                     </div>
                     <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                        <a class="position-relative d-block overflow-hidden" href="/slopes">
-                            <img class="img-fluid" src="frontendAsset/img/Jermuk waterfall2.jpeg" alt="">
-                            <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">slopes</div>
+                        <a class="position-relative d-block overflow-hidden" href="">
+                            <img class="img-fluid" src="frontendAsset/img/churches25.jpeg" alt="">
+                            <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">churches25</div>
                         </a>
                     </div>
                 </div>
@@ -110,45 +110,6 @@
 </div>
 <!-- Destination Start -->
 
-
-<!-- Destination Start -->
-    <div class="container-xxl py-5 destination">
-        <div class="container">
-
-            <div class="row g-3">
-                <div class="col-lg-7 col-md-6">
-                    <div class="row g-3">
-                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                            <a class="position-relative d-block overflow-hidden" href="/museums">
-                                <img class="img-fluid" src="frontendAsset/img/Matenadaran museum.jpeg" alt="">
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">museums</div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                            <a class="position-relative d-block overflow-hidden" href="/mountains">
-                                <img class="img-fluid" src="frontendAsset/img/mountain.jpeg" alt="">
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"> mountains</div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                            <a class="position-relative d-block overflow-hidden" href="/gardens">
-                                <img class="img-fluid" src="frontendAsset/img/Cascade.jpeg" alt="">
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">gardens</div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
-                    <a class="position-relative d-block h-100 overflow-hidden" href="/springs">
-                        <img class="img-fluid position-absolute w-100 h-100" src="frontendAsset/img/Jermuk waterfall.jpeg" alt="" style="object-fit: cover;">
-                        <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">springs</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-<!-- Destination Start -->
 
 
     @include('frontend.layouts.footer')

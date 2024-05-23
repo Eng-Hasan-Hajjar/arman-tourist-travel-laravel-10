@@ -3,7 +3,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
     <a href="" class="navbar-brand p-0">
-        <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>Armenia Tourism</h1>
+        <h3 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>Armenia Tourism</h3>
         <!-- <img src="img/logo.png" alt="Logo"> -->
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -12,10 +12,12 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto py-0">
             <a href="/" class="nav-item nav-link active">Home</a>
+            <a href="regions" class="nav-item nav-link">Regions</a>
+
+            <a href="destination" class="nav-item nav-link">Destination</a>
             <a href="about" class="nav-item nav-link">About</a>
-            <a href="destination" class="nav-item nav-link">destination</a>
             <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">your distination</a>
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Your distination</a>
                 <div class="dropdown-menu m-0">
                     <a href="castles" class="dropdown-item">castles</a>
                     <a href="caves" class="dropdown-item">caves</a>

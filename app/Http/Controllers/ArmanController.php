@@ -148,4 +148,10 @@ class ArmanController extends Controller
         return redirect()->route('arman.index')
             ->with('success', 'arman deleted successfully');
     }
+
+    public function showsingle($id)
+    {
+        $data = Arman::find($id);
+        return view('backend.arman.show', compact('data'));
+    }
 }

@@ -32,6 +32,45 @@ Route::get('/', function () {
     return view('frontend.index');
 
 });
+Route::get('/regions', function () {
+    return view('frontend.regions');
+});
+Route::get('/regions/viewregion/Aragatsotn', function () {
+    return view('frontend.viewregion.Aragatsotn');
+});
+Route::get('/regions/viewregion/Ararat', function () {
+    return view('frontend.viewregion.Ararat');
+});
+Route::get('/regions/viewregion/Armavir', function () {
+    return view('frontend.viewregion.Armavir');
+});
+Route::get('/regions/viewregion/Gegharkunik', function () {
+    return view('frontend.viewregion.Gegharkunik');
+});
+Route::get('/regions/viewregion/Kotayk', function () {
+    return view('frontend.viewregion.Kotayk');
+});
+Route::get('/regions/viewregion/Lori', function () {
+    return view('frontend.viewregion.Lori');
+});
+Route::get('/regions/viewregion/Shirak', function () {
+    return view('frontend.viewregion.Shirak');
+});
+Route::get('/regions/viewregion/Syunik', function () {
+    return view('frontend.viewregion.Syunik');
+});
+Route::get('/regions/viewregion/Tavush', function () {
+    return view('frontend.viewregion.Tavush');
+});
+Route::get('/regions/viewregion/Vayots_Dzor', function () {
+    return view('frontend.viewregion.Vayots_Dzor');
+});
+Route::get('/regions/viewregion/yerevan', function () {
+    return view('frontend.viewregion.yerevan');
+});
+
+
+
 Route::get('/destination', function () {
     return view('frontend.destination');
 });
