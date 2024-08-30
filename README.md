@@ -1,26 +1,43 @@
+### Eng Hasan Hajjar   - 2024 projects
+### المهندس حسن حجار
+### للاستشارات البرمجية التواصل على الرقم عبر الواتس آب
+###   +963933912076
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
 
+main interface for website:
 
-<img src="interfaces/arman region edit .PNG" alt="Build Status">
-
-</p>
-<p align="center">
-
-
-<img src="interfaces/arman region select image.PNG" alt="Build Status">
+<img src="interfaces/main interface for website.PNG" alt="Build Status">
 
 </p>
 
 <p align="center">
 
+log in:
 
-<img src="interfaces/arman regions create new.PNG" alt="Build Status">
+<img src="interfaces/log in.PNG" alt="Build Status">
 
 </p>
 <p align="center">
 
+dashboard main:
+
+<img src="interfaces/dashboard main.PNG" alt="Build Status">
+
+</p>
+<p align="center">
+
+edit profile:
+
+<img src="interfaces/edit profile.PNG" alt="Build Status">
+
+</p>
+<p align="center">
+
+arman regions index:
 
 <img src="interfaces/arman regions index.PNG" alt="Build Status">
 
@@ -28,64 +45,94 @@
 
 <p align="center">
 
+arman region edit:
+
+<img src="interfaces/arman region edit .PNG" alt="Build Status">
+
+</p>
+<p align="center">
+
+arman region select image:
+
+<img src="interfaces/arman region select image.PNG" alt="Build Status">
+
+</p>
+
+<p align="center">
+
+arman regions create new:
+
+<img src="interfaces/arman regions create new.PNG" alt="Build Status">
+
+</p>
+
+
+<p align="center">
+
+arman regions view:
 
 <img src="interfaces/arman regions view.PNG" alt="Build Status">
 
 </p>
+
 <p align="center">
 
-
-<img src="interfaces/Capture.PNG" alt="Build Status">
-
-</p>
-<p align="center">
-
+castles create new:
 
 <img src="interfaces/castles create new.PNG" alt="Build Status">
 
 </p>
 <p align="center">
 
+control panel many tabs:
 
 <img src="interfaces/control panel many tabs.PNG" alt="Build Status">
+
+</p>
+
+<p align="center">
+
+del churches:
+
+<img src="interfaces/" alt="Build Status">
 
 </p>
 
 
 <p align="center">
 
+create churches:
 
 <img src="interfaces/create churches.PNG" alt="Build Status">
 
 </p>
 <p align="center">
 
+show details churches:
 
-<img src="interfaces/dashboard main.PNG" alt="Build Status">
+<img src="interfaces/show details churches.PNG" alt="Build Status">
 
 </p>
 
 <p align="center">
 
+db all names of tables:
 
 <img src="interfaces/db all names of tables.PNG" alt="Build Status">
 
 </p>
 <p align="center">
 
+db armen region:
 
 <img src="interfaces/db armen region.PNG" alt="Build Status">
 
 </p>
 
+
 <p align="center">
 
-
-<img src="interfaces/db chen db notation.PNG" alt="Build Status">
-
-</p>
-<p align="center">
-
+DB chen notation:
 
 <img src="interfaces/db chen db notation2.PNG" alt="Build Status">
 
@@ -94,56 +141,23 @@
 
 <p align="center">
 
+DB crows foot db notaion:
 
 <img src="interfaces/db crows foot db notaion.PNG" alt="Build Status">
 
 </p>
-<p align="center">
 
-
-<img src="interfaces/db users table.PNG" alt="Build Status">
-
-</p>
 
 
 <p align="center">
 
-
-<img src="interfaces/del churches.PNG" alt="Build Status">
-
-</p>
-<p align="center">
-
-
-<img src="interfaces/edit profile.PNG" alt="Build Status">
-
-</p>
-
-<p align="center">
-
-
-<img src="interfaces/log in.PNG" alt="Build Status">
-
-</p>
-<p align="center">
-
-
-<img src="interfaces/main interface for website.PNG" alt="Build Status">
-
-</p>
-
-<p align="center">
-
-
-<img src="interfaces/show details churches.PNG" alt="Build Status">
-
-</p>
-<p align="center">
-
+UML diagram:
 
 <img src="interfaces/uml diagram.PNG" alt="Build Status">
 
 </p>
+
+
 
 ## About Laravel
 
